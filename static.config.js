@@ -12,7 +12,7 @@ export default {
         }),
         children: articles.map(article => ({
           path: `/portfolio/${article.id}`,
-          component: 'src/containers/Article',
+          template: 'src/containers/Article',
           getData: () => ({article,articles,}),
           
         })),
@@ -24,7 +24,7 @@ export default {
         }),
         children: articlesEn.map(article => ({
           path: `/portfolio/${article.id}`,
-          component: 'src/containers/ArticleEn',
+          template: 'src/containers/ArticleEn',
           getData: () => ({
             article,articlesEn, 
           }),
@@ -34,11 +34,11 @@ export default {
       },
       {
         path:'/en/contact',
-        component: 'src/pages/contact',
+        template: 'src/pages/contact',
       },
       {
         path: '/en/about-me',
-        component: 'src/pages/about-me'
+        template: 'src/pages/about-me'
       },
     ],
   plugins: [
