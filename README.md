@@ -1,3 +1,3 @@
-# React-Static - Basic Template
+# React-Static baset Art Portfolio
 
- with styled components redy to play.
+ 
