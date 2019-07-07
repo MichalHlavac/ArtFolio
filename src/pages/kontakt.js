@@ -1,9 +1,10 @@
 import React from 'react'
-
+import UConstruction from 'components/construction'
 
 export default () =>(
     <div>
-        <h1>Kontakt</h1>
-        
+        <UConstruction/>
+    
     </div>
-)
+    
+    )

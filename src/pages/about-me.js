@@ -1,7 +1,16 @@
-import React from 'react'
 
+import React from 'react'
+import UConstruction from 'components/construction'
 
 export default () =>(
+    <div>
+        <UConstruction/>
+    
+    </div>
+    
+    )
+
+/*export default () =>(
     <div>
     
         <h1>Martina Fischmeister *1995</h1>
@@ -25,4 +34,4 @@ In her illustration she cuts them, sinks them under different kinds of liquids a
 
 </p>
     </div>
-)
+)*/

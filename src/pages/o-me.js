@@ -1,8 +1,17 @@
+
+/*import styled from 'styled-components'*/
 import React from 'react'
-import styled from 'styled-components'
+import UConstruction from 'components/construction'
 
+export default () =>(
+    <div>
+        <UConstruction/>
+    
+    </div>
+    
+    )
 
-const OMe=styled.div `
+/*const OMe=styled.div `
 margin-left:auto;
 margin-right:auto;
 text-align:center;
@@ -32,4 +41,4 @@ V jejích ilustracích je rozkládá, ořezává a využívá zajímavého osvě
 
 </p>
     </OMe>
-    )
+    )*/
