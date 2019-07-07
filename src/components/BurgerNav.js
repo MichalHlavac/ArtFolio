@@ -19,12 +19,12 @@ z-index:-1;
 background-color: #ffff;
 width:100%;
 padding-bottom:0px;
-text-align:center;
+
 `
 
 
 const Items=styled.div`
-display:inline-size;
+display:inline-block;
 a{
 display:block;
     font-family: Arial;
@@ -60,9 +60,9 @@ height:auto;
                 <Link onClick={this.click} to='/'>Portfolio</Link>
                 <Link onClick={this.click} to='/o-me'>O Mě</Link>
                 <Link onClick={this.click} to='/kontakt'>Kontakt</Link>
-                
-                </Items>
                 <Footer/>
+                </Items>
+                
                 </Nav>
                 )
             }
@@ -75,9 +75,9 @@ height:auto;
                         <Link onClick={this.click} to='/en'>Portfolio</Link>
                         <Link onClick={this.click} to='/en/about-me'>About Me</Link>
                         <Link onClick={this.click} to='/en/contact'>Contact</Link>
-                        
-                        </Items>
                         <Footer/>
+                        </Items>
+                        
                     </Nav>   
                 )
         }
