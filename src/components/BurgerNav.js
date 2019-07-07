@@ -2,7 +2,7 @@
 import React,{Component} from 'react'
 import {Link} from '@reach/router'
 import styled from 'styled-components'
-import Footer from './components/Footer'
+import Footer from '/components/Footer'
 
 const Nav = styled.nav`
 
@@ -72,7 +72,7 @@ height:auto;
                         <Link onClick={this.click} to='/en'>Portfolio</Link>
                         <Link onClick={this.click} to='/en/about-me'>About Me</Link>
                         <Link onClick={this.click} to='/en/contact'>Contact</Link>
-                        
+                        <Footer/>
                         </Items>
                     </Nav>   
                 )

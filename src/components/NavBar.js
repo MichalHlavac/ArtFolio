@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from '@reach/router'
 import styled from 'styled-components'
-import Footer from './components/Footer'
+import Footer from '/components/Footer'
 
 const NavBar = styled.nav`
 @media only screen and (max-height:450px) and (orientation:landscape){
