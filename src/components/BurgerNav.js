@@ -2,7 +2,7 @@
 import React,{Component} from 'react'
 import {Link} from '@reach/router'
 import styled from 'styled-components'
-import Footer from '/components/Footer'
+import Footer from '../components/Footer'
 
 const Nav = styled.nav`
 
