@@ -9,12 +9,12 @@ padding-left:50px;
 const Facebook= styled.img`
     
     width:30px;
-    height:auto;
+    height:30px;
 `
 const Instagram= styled.img`
     
     width:30px;
-    height:auto;
+    height:30px;
 `
 
 
