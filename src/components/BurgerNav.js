@@ -25,6 +25,7 @@ padding-bottom:0px;
 
 const Items=styled.div`
 display:inline-block;
+text-align:center;
 a{
 display:block;
     font-family: Arial;
