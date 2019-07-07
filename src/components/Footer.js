@@ -3,15 +3,17 @@ import styled from 'styled-components'
 
 const Social=styled.div `
 display:inline;
+padding-left:50px;
+.a{display:inline}
 `
 const Facebook= styled.img`
     
-    width:25px;
+    width:30px;
     height:auto;
 `
 const Instagram= styled.img`
     
-    width:25px;
+    width:30px;
     height:auto;
 `
 
