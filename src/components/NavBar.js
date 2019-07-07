@@ -47,7 +47,7 @@ switch(language){
     <Link to='/'>Portfolio</Link>
     <Link to='/o-me'>O Mě</Link>
     <Link to='/kontakt'>Kontakt</Link>
-
+    <Footer/>
 </NavBar>
 );
 default:
