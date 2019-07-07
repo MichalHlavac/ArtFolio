@@ -4,7 +4,7 @@ import React from 'react'
 export default () =>(
     <div>
     
-        <h1>Martina Fischmeister ¬ *1995</h1>
+        <h1>Martina Fischmeister *1995</h1>
         <p>
 
 

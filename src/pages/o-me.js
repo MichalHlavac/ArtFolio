@@ -3,12 +3,15 @@ import styled from 'styled-components'
 
 
 const OMe=styled.div `
+margin-left:auto;
+margin-right:auto;
 text-align:center;
+max-width:900px;
 `
 export default () =>(
     <OMe>
     
-        <h1>Martina Fischmeister ¬ *1995</h1>
+        <h1>Martina Fischmeister *1995</h1>
         <p>
 
 
