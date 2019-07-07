@@ -19,6 +19,7 @@ z-index:-1;
 background-color: #ffff;
 width:100%;
 padding-bottom:0px;
+text-align:center;
 `
 
 
