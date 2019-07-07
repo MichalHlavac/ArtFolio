@@ -59,8 +59,9 @@ height:auto;
                 <Link onClick={this.click} to='/'>Portfolio</Link>
                 <Link onClick={this.click} to='/o-me'>O Mě</Link>
                 <Link onClick={this.click} to='/kontakt'>Kontakt</Link>
-                <Footer/>
+                
                 </Items>
+                <Footer/>
                 </Nav>
                 )
             }
@@ -73,8 +74,9 @@ height:auto;
                         <Link onClick={this.click} to='/en'>Portfolio</Link>
                         <Link onClick={this.click} to='/en/about-me'>About Me</Link>
                         <Link onClick={this.click} to='/en/contact'>Contact</Link>
-                        <Footer/>
+                        
                         </Items>
+                        <Footer/>
                     </Nav>   
                 )
         }
