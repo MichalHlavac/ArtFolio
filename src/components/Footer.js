@@ -3,25 +3,20 @@ import styled from 'styled-components'
 
 
 const Facebook= styled.img`
-    position:fixed;
-        bottom:120px;
-        right:25px;
-    width:70px;
+    
+    width:25px;
     height:auto;
 `
 const Instagram= styled.img`
-    position:fixed;
     
-        bottom:30px;
-        right:25px;
-    width:70px;
+    width:25px;
     height:auto;
 `
 
 
 
 export default ()=>(
-    <footer>
+    <div>
         <a href="https://www.facebook.com/martinafischmeister/" target="_blank">
             <Facebook src='/icons/facebook.svg'/>
         </a>
@@ -29,5 +24,5 @@ export default ()=>(
         <a href="https://www.instagram.com/fischmeisterr/" target="_blank">
             <Instagram src='/icons/instagram.svg'/>
         </a>
-    </footer>
+    </div>
 )

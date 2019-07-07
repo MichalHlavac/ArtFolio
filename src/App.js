@@ -1,7 +1,7 @@
 import React from 'react'
 import {Root, Routes} from 'react-static'
 import LangNav from './components/LangNav'
-import Footer from './components/Footer'
+
 import styled, {createGlobalStyle} from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
@@ -42,7 +42,7 @@ function App() {
           
         <Routes path="*"/>
         </Body>
-          <Footer/>
+          
           </React.Suspense>
         </Root>
   )}
