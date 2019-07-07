@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const Social=styled.div `
 display:inline;
-padding-left:50px;
+padding-left:100px;
 .a{display:inline}
 `
 const Facebook= styled.img`
