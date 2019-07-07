@@ -1,43 +1,39 @@
+import React,{Component} from 'react';
+import {Link} from '@reach/router';
+import styled from 'styled-components';
 
-import React,{Component} from 'react'
-import {Link} from '@reach/router'
-import styled from 'styled-components'
-import Footer from '../components/Footer'
+import Social from '../components/SocialNW';
 
 const Nav = styled.nav`
+            position:absolute;
+            top:0px;
+            left:0px;
+            z-index:-1;
+            background-color: #ffff;
+            width:100%;
+            padding-bottom:0px;
 
-@media only screen and (min-height:450px)  and (orientation:landscape){
-    display:none;
-}
-@media only screen and (min-width:700px) and (orientation: portrait){
-  display:none;
-}
-position:absolute;
-top:0px;
-left:0px;
-z-index:-1;
-background-color: #ffff;
-width:100%;
-padding-bottom:0px;
-
+            @media only screen and (min-height:450px)  and (orientation:landscape){
+            display:none;}
+            @media only screen and (min-width:700px) and (orientation: portrait){
+            display:none;}
 `
 
 
 const Items=styled.div`
-
-a{
-display:block;
-    font-family: Arial;
-  color: black;
-  text-decoration:none;
-  text-align: center;
-  font-size:25px;
-}
+            a{
+                display:block;
+                font-family: Arial;
+                color: black;
+                text-decoration:none;
+                text-align: center;
+                font-size:25px;
+            }
 `
 const Img=styled.img `
-padding: 15px;
-width:30px;
-height:auto;
+            padding: 15px;
+            width:30px;
+            height:auto;
 `
 
  export default class BurgerNav extends Component {
@@ -54,14 +50,14 @@ height:auto;
             {
                 return (
                 <Nav>
-                <Img src="/icons/menu.svg" onClick={this.click} />
-                <br/>
-                <Items>
-                <Link onClick={this.click} to='/'>Portfolio</Link>
-                <Link onClick={this.click} to='/o-me'>O Mě</Link>
-                <Link onClick={this.click} to='/kontakt'>Kontakt</Link>
-                <Footer/>
-                </Items>
+                    <Img src="/icons/menu.svg" onClick={this.click} />
+                    <br/>
+                    <Items>
+                        <Link onClick={this.click} to='/'>Portfolio</Link>
+                        <Link onClick={this.click} to='/o-me'>O Mě</Link>
+                        <Link onClick={this.click} to='/kontakt'>Kontakt</Link>
+                        <Social/>
+                    </Items>
                 
                 </Nav>
                 )
@@ -72,10 +68,10 @@ height:auto;
                         <Img src="/icons/menu.svg"onClick={this.click} />
                         <br/>
                         <Items>
-                        <Link onClick={this.click} to='/en'>Portfolio</Link>
-                        <Link onClick={this.click} to='/en/about-me'>About Me</Link>
-                        <Link onClick={this.click} to='/en/contact'>Contact</Link>
-                        <Footer/>
+                            <Link onClick={this.click} to='/en'>Portfolio</Link>
+                            <Link onClick={this.click} to='/en/about-me'>About Me</Link>
+                            <Link onClick={this.click} to='/en/contact'>Contact</Link>
+                            <Social/>
                         </Items>
                         
                     </Nav>   
@@ -88,6 +84,6 @@ height:auto;
                 )
             
         }
-    }
+    };
 
   

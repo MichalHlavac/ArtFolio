@@ -1,7 +1,8 @@
-import React from 'react'
-import {withRouteData} from 'react-static'
-import PortNav from 'components/PortNav'
-import styled from 'styled-components'
+import React from 'react';
+import {withRouteData} from 'react-static';
+import styled from 'styled-components';
+
+import PortNav from 'components/PortNav';
 
 const Portfolio=styled.div`
 

@@ -1,14 +1,12 @@
 
-/*import styled from 'styled-components'*/
-import React from 'react'
-import UConstruction from 'components/construction'
+/*import styled from 'styled-components';*/
+import React from 'react';
+import UConstruction from 'components/construction';
 
 export default () =>(
     <div>
         <UConstruction/>
-    
     </div>
-    
     )
 
 /*const OMe=styled.div `
