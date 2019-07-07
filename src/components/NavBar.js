@@ -19,7 +19,7 @@ a{
   font-family: Arial;
   text-decoration: none;
   color: black;
-  font-size:25px;
+  font-size:30px;
 };
 `
 
