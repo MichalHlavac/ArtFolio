@@ -1,8 +1,8 @@
 import React from 'react';
 import {Root, Routes} from 'react-static';
 import styled, {createGlobalStyle} from 'styled-components';
-
-import LangNav from './components/LangNav';
+import BurgerNav from './components/BurgerNav'
+import NavBar from './components/NavBar';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -35,7 +35,8 @@ function App() {
         <Root>
           <React.Suspense fallback={<em>Loading...</em>}>
             <GlobalStyle/>
-            <LangNav/>
+            <BurgerNav/>
+            <NavBar/>
             <Body>
               <Routes path="*"/>
             </Body>

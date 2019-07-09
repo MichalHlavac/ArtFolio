@@ -1,5 +1,15 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, {keyframes} from 'styled-components';
+
+const rightSpin=keyframes `
+ from {transform: rotate(0deg);}
+                to {transform: rotate(360deg);}
+`
+
+const leftSpin= keyframes `
+from {transform: rotate(0deg);}
+            to {transform: rotate(-360deg);}
+`
 
 const Under=styled.div `
               position:relative;
@@ -9,7 +19,7 @@ const Construction=styled.div `
                     position:relative;
 `
 const Orange=styled.img `
-              animation: gear-spin infinite 20s linear;
+              animation: ${rightSpin} infinite 20s linear;
               height: 20vw;
               width:auto;
               position:absolute;
@@ -17,14 +27,11 @@ const Orange=styled.img `
               left:10vw;
               pointer-events: none;
 
-              @keyframes gear-spin {
-                from {transform: rotate(0deg);}
-                to {transform: rotate(360deg);}
-                }
+              
 `
 
 const Blue=styled.img `
-            animation: gear-spin-left infinite 20s linear;
+            animation: ${leftSpin} infinite 20s linear;
             height: 20vw;
             width:auto;
             position:absolute;
@@ -32,13 +39,10 @@ const Blue=styled.img `
             left:0vw;
             pointer-events: none;
 
-            @keyframes gear-spin-left {
-            from {transform: rotate(0deg);}
-            to {transform: rotate(-360deg);}
-            }
+            
 `
 const Yelow=styled.img `
-              animation: gear-spin infinite 20s linear;
+              animation: ${rightSpin} infinite 20s linear;
               height: 20vw;
               width:auto;
               position:absolute;

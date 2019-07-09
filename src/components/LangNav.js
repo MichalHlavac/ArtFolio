@@ -1,52 +1,44 @@
-import React from 'react'
-import {Link} from '@reach/router'
-import styled from 'styled-components'
-import NavBar from 'components/NavBar'
-import BurgerNav from 'components/BurgerNav'
+import React from 'react';
+import {Link} from '@reach/router';
+import styled from 'styled-components';
+import Navigate from '../components/Navigate'
 
-const Header = styled.header`
-position:fixed;
-top:0px;
-right:0px;
-z-index:+2;
-width:100%;
-;
 
-background-color: #ffff;
-padding-bottom:10px;
-padding-top: 5px;
-`
 
-const LangNav = styled.nav`
+const LangNav = styled.div`
 position:absolute;
-
-right:5px;
+top:15px;
+left:20px;
 margin:0px;
-padding-top: 5px;
+text-align:center;`
 
-
-text-align:center;
-a{
-  padding: 10px;
-  font-family: Arial;
-  text-decoration: none;
-  color: black;
-  font-size:25px;
-};
+const LLink=styled(Link) ` 
+                display: inline;
+                font-family: Arial;
+                color: black;
+                text-decoration:none;
+                text-align: center;
+                font-size:25px;
+                padding:5px;
 `
 
-export default class Nav extends React.Component {
+export default class NBar extends React.Component {
   state = {language:'cz'};
   toCz=()=>{ this.setState({language:'cz'})};
   toEn=()=>{this.setState({language:'en'})};
+  
+  
+  
   render(){  
   return(
-    <Header>
-    <LangNav>
-        <Link onClick={this.toCz} to='/'>CZ</Link>
-        <Link onClick={this.toEn} to='/en'>EN</Link>
-    </LangNav>
-    <NavBar lang={this.state.language}/>
-    <BurgerNav lang={this.state.language}/>
-    </Header>)
+    <div>
+      
+    
+      <Navigate lang={this.state.language}/>
+   
+      <LangNav>
+        <LLink onClick={this.toCz} to='/'>CZ</LLink>
+        <LLink onClick={this.toEn} to='/en'>EN</LLink>
+      </LangNav>
+    </div>)
 }}

@@ -2,29 +2,35 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Social=styled.div `
+            text-align:center;
+
+            @media only screen and (min-height:450px)  and (orientation:landscape){
                 display:inline;
-                padding-left:100px;
-                .a{display:inline}
+                margin:10px 20px 10px 40px;}
+            @media only screen and (min-width:800px) and (orientation: portrait){
+                display:inline;
+                margin:10px 20px 10px 40px;}
+                
+                
+                
 `
-const Facebook=styled.img`
+const SIcon=styled.img`
                 width:30px;
                 height:30px;
+                margin:0px 5px 0px 5px;
 `
-const Instagram=styled.img`
-                width:30px;
-                height:30px;
-`
+
 
 
 
 export default ()=>(
     <Social>
         <a href="https://www.facebook.com/martinafischmeister/" target="_blank">
-            <Facebook src='/icons/facebook.svg'/>
+            <SIcon src='/icons/facebook.svg'/>
         </a>
 
         <a href="https://www.instagram.com/fischmeisterr/" target="_blank">
-            <Instagram src='/icons/instagram.svg'/>
+            <SIcon src='/icons/instagram.svg'/>
         </a>
     </Social>
 );

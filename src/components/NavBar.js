@@ -1,54 +1,31 @@
 import React from 'react';
-import {Link} from '@reach/router';
 import styled from 'styled-components';
+import LangNav from '../components/LangNav'
 
-import Social from '../components/SocialNW';
+const NavBar = styled.div`
+  @media only screen and (max-height:450px) and (orientation:landscape){
+                display:none;}
+                @media only screen and (max-width:800px) and (orientation:portrait){
+                display:none;}
+position:fixed;
+top:0px;
+right:0px;
+z-index:+2;
+width:100%;
+text-align:right;
+background-color: #ffff;
+padding-bottom:10px;
+padding-top: 10px;
 
-const NavBar = styled.nav`
-                padding: 5px;
-                background: #ffff;
-                text-align:center;
                 
-                @media only screen and (max-height:450px) and (orientation:landscape){
-                display:none;}
-                @media only screen and (max-width:700px) and (orientation:portrait){
-                display:none;}
+
                 
-                a{
-                  padding: 10px;
-                  font-family: Arial;
-                  text-decoration: none;
-                  color: black;
-                  font-size:30px;
-                }
 `
 
-export default function (props){
-const language = props.lang;
 
+export default()=>(
 
-
-switch(language){
-  case 'en':
-  return(
-    <NavBar>
-      <Link to='/en'>Portfolio</Link>
-      <Link to='/en/about-me'>About Me</Link>
-      <Link to='/en/contact'>Contact</Link>
-      <Social/>
-    </NavBar>
+  <NavBar>
+    <LangNav/>
+  </NavBar>
 );
-
-  case 'cz' :
-  return(
-    <NavBar>
-    
-      <Link to='/'>Portfolio</Link>
-      <Link to='/o-me'>O Mě</Link>
-      <Link to='/kontakt'>Kontakt</Link>
-      <Social/>
-    </NavBar>
-);
-default:return null;
-}
-};
