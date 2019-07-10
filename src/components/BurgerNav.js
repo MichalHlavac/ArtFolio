@@ -48,7 +48,7 @@ margin:0px;
             {
                 return (
                 <Nav>
-                    <Img src="/icons/menu.svg" onClick={this.click} />
+                    <Img src="/icons/close.svg" onClick={this.click} />
                     <br/>
                     
                     <LangNav/>
