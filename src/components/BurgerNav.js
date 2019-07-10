@@ -26,7 +26,7 @@ const Nav = styled.nav`
 
 const Img=styled.img `
 position:absolute;
-top:0px;
+top:5px;
 right:5px;
 margin:0px;
             padding: 10px;
