@@ -22,8 +22,8 @@ const LLink=styled(Link) `
 
 export default function NBar (){
   const [language,setLanguage]= useState('cz');
-  toCz=()=>setLanguage('cz');
-  toEn=()=>setLanguage('en');
+  const toCz=()=>setLanguage('cz');
+  const toEn=()=>setLanguage('en');
   return(
     <div>
       <Navigate lang={language}/>
