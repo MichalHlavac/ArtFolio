@@ -14,15 +14,13 @@ const Nav=styled.div `
 `
 const PortImg=styled.img`
     height:400px;
-    width:100%;
-    max-width:400px;
+    width:400px;
     object-fit:cover;
 `
 const Box=styled.div `
     box-sizing:border-box;
     text-align:center;
     width:400px;
-    max-width:100%;
     height:400px;
     overflow:hidden;
     margin:5px 5px 5px 5px;
@@ -37,8 +35,7 @@ const Overlay= styled.span`
     padding:160px 0;
     box-sizing:border-box;
     @media (hover: none)
-        {opacity:0.6;
-        color:white;}
+        {display:none;}
     @media(hover: hover){${Box} &:hover{
         opacity:0.6;
         color:white;}}
@@ -47,6 +44,7 @@ export default function PortNav(props){
     const lang = props.lang;
     const Articles = props.articles;
     const items = Articles.map(article => 
+        
         <Box className='index' key={article.id}>
             <Link to={`/${lang}portfolio/${article.id}`}>
                 <Overlay>
