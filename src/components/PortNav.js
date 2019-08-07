@@ -28,6 +28,7 @@ const Box=styled.div `
 const Overlay= styled.span`
     position:absolute;
     z-index:1;
+    object-fit:cover;
     width:400px;
     height:400px;
     background-color: black;
