@@ -18,7 +18,9 @@ const PortImg=styled.img`
     object-fit:cover;
 `
 const Box=styled.div `
+    box-shadow: 0 8px 6px -6px black;
     box-sizing:border-box;
+    overflow:hidden;
     text-align:center;
     width:400px;
     height:400px;
