@@ -14,7 +14,8 @@ const Nav=styled.div `
 `
 const PortImg=styled.img`
     height:400px;
-    width:400px;
+    width:100%;
+    max-width:400px;
     object-fit:cover;
 `
 const Box=styled.div `
