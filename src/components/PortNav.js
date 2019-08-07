@@ -44,7 +44,7 @@ export default function PortNav(props){
     const lang = props.lang;
     const Articles = props.articles;
     const items = Articles.map(article => 
-        <ScrollAnimation animateIn='heartBeat'>
+        
         <Box className='index' key={article.id}>
             <Link to={`/${lang}portfolio/${article.id}`}>
                 <Overlay>
@@ -53,6 +53,6 @@ export default function PortNav(props){
                 <PortImg src={article.image} alt={article.name} />
             </Link>
         </Box>
-        </ScrollAnimation>);
+        );
     return(
         <Nav>{items}</Nav>);};
