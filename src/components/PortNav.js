@@ -21,6 +21,7 @@ const Box=styled.div `
     box-sizing:border-box;
     text-align:center;
     width:400px;
+    max-width:100%;
     height:400px;
     overflow:hidden;
     margin:5px 5px 5px 5px;
@@ -28,7 +29,6 @@ const Box=styled.div `
 const Overlay= styled.span`
     position:absolute;
     z-index:1;
-    object-fit:cover;
     width:400px;
     height:400px;
     background-color: black;
