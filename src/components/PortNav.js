@@ -44,7 +44,7 @@ export default function PortNav(props){
     const lang = props.lang;
     const Articles = props.articles;
     const items = Articles.map(article => 
-        <ScrollAnimation animateIn='flash'>
+        <ScrollAnimation animateIn='heartBeat'>
         <Box className='index' key={article.id}>
             <Link to={`/${lang}portfolio/${article.id}`}>
                 <Overlay>
