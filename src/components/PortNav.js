@@ -35,7 +35,8 @@ const Overlay= styled.span`
     padding:160px 0;
     box-sizing:border-box;
     @media (hover: none)
-        {display:none;}
+        {opacity:0.6;
+        color:white;}
     @media(hover: hover){${Box} &:hover{
         opacity:0.6;
         color:white;}}
@@ -44,7 +45,6 @@ export default function PortNav(props){
     const lang = props.lang;
     const Articles = props.articles;
     const items = Articles.map(article => 
-        
         <Box className='index' key={article.id}>
             <Link to={`/${lang}portfolio/${article.id}`}>
                 <Overlay>
