@@ -5,7 +5,9 @@ import styled from 'styled-components';
 import PortNav from 'components/PortNav';
 
 const Portfolio=styled.div`
+position:relative;
 `
+
 
 export default withRouteData (({articles}) => (
 

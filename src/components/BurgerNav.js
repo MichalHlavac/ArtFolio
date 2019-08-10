@@ -14,16 +14,25 @@ const Nav = styled.nav`
     background-color: #ffff;
     width:100%;
     padding-bottom:0px;
-    padding-top:45px;
+    padding-top:65px;
 `
 const Img=styled.img `
     position:absolute;
-    top:5px;
+    top:15px;
     right:5px;
     margin:0px;
     padding: 10px;
     width:30px;
     height:auto;
+`
+const Logo=styled.img `
+    position:absolute;
+    top:15px;
+    left:15px;
+    margin:0px;
+    padding:0px;
+    width:auto;
+    height:40px;
 `
  export default function BNav() {
     const [click, setClick] =useState(false);
@@ -38,6 +47,7 @@ const Img=styled.img `
                 </Nav>)}
         return(
             <Nav>
+                <Logo src="/icons/logo2.svg"/>
                 <Img src="/icons/menu.svg" onClick={open}/>
             </Nav>)};
 
