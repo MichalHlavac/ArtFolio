@@ -13,12 +13,13 @@ const Nav=styled.div `
     margin-right:auto;
 `
 const PortImg=styled.img`
+    position:relative;
     height:400px;
     width:400px;
     object-fit:cover;
 `
 const Box=styled.div `
-    box-shadow: 0 8px 6px -6px black;
+    position:relative;
     box-sizing:border-box;
     overflow:hidden;
     text-align:center;
@@ -30,16 +31,20 @@ const Box=styled.div `
 const Overlay= styled.span`
     position:absolute;
     z-index:1;
-    width:400px;
-    height:400px;
-    background-color: black;
+    width:100%;
+    height:100%;
+    max-width:400px;
+    max-height:400px;
     opacity:0;
     padding:160px 0;
     box-sizing:border-box;
     @media (hover: none)
-        {display:none;}
+        { opacity:1;
+            background-color: rgba(0,0,0,0.5);
+        color:white;}
     @media(hover: hover){${Box} &:hover{
-        opacity:0.6;
+        opacity:1;
+        background-color: rgba(0,0,0,0.5);
         color:white;}}
 `
 export default function PortNav(props){

@@ -8,7 +8,9 @@ const Contt=styled.div `
               justify-content:center;
               margin-left:auto;
               margin-right:auto;
+              margin-bottom:30px;
               max-width:2480px;
+              border-bottom: 1px solid gray;
 
 
 `
