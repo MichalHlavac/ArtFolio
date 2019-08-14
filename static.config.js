@@ -33,10 +33,6 @@ export default {
         
       },
       {
-        path:'/en/contact',
-        template: 'src/pages/contact',
-      },
-      {
         path: '/en/about-me',
         template: 'src/pages/about-me'
       },
