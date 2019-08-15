@@ -20,6 +20,7 @@ grid-auto-rows:minmax(1vw,auto);
 .quote{
     grid-column:2/12;
     grid-row:4/5;
+    font-style:italic;
 };
 `
 export default () =>(
