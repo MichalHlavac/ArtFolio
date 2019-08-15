@@ -40,15 +40,15 @@ const Overlay= styled.span`
     box-sizing:border-box;
     @media (hover: none)
         { opacity:1;
-            background-color: rgba(0,0,0,0.6);
+            background-color: rgba(0,0,0,0.7);
         color:white;
         position:absolute;
         bottom:0;
         width:100%;
         height:120px;
-        padding:32px;
+        padding:40px;
         h1{margin:0;
-        padding:auto;}
+        padding:0;}
         }
     @media(hover: hover){${Box} &:hover{
         opacity:1;
