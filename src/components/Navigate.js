@@ -1,7 +1,7 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import {Link} from '@reach/router'
 import styled from 'styled-components'
-import Social from '../components/SocialNW';
+import {LangContext} from '../LangContext';
 
 const SLink=styled(Link) `
   @media only screen and (min-height:450px)  and (orientation:landscape){
@@ -17,25 +17,23 @@ const SLink=styled(Link) `
   text-decoration:none;
   text-align: center;
   font-size:25px;
-  margin:10px 40px 10px 40px;
+  margin:10px 20px 10px 20px;
 `
-export default function (props){
-    const language = props.lang;
-    switch(language){
+export default function (){
+    const [lang,setLang] = useContext(LangContext);
+    switch(lang){
       case 'en':
         return(
-          <nav>
+          <div className="Navigate">
             <SLink to='/en'>Portfolio</SLink>
             <SLink to='/en/about-me'>About Me</SLink>
-            <SLink to='/en/contact'>Contact</SLink>
-            <Social/>
-          </nav>);
+            <SLink to='/contact'>Contact</SLink>
+          </div>);
       case 'cz' :
         return(
-          <nav>
+          <div className="Navigate">
             <SLink to='/'>Portfolio</SLink>
             <SLink to='/o-me'>O Mě</SLink>
-            <SLink to='/kontakt'>Kontakt</SLink>
-            <Social/>
-          </nav>);
+            <SLink to='/contact'>Kontakt</SLink>
+          </div>);
       default:return null;}};

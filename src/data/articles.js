@@ -38,11 +38,6 @@ const articles = [
         description: '',
       },
       { 
-        name:'Divocina6',
-        image:'/IMG/divocina/divocina_6.jpg',
-        description: '',
-      },
-      { 
         name:'Divocina7',
         image:'/IMG/divocina/divocina_7.jpg',
         description: '',

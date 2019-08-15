@@ -15,6 +15,7 @@ const Contt=styled.div `
 
 `
 const Img=styled.img`
+width:600px;
 `
 const Item=styled.div `
             width:600px;

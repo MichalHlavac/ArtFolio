@@ -1,6 +1,6 @@
-import path from 'path'
-import articles from './src/data/articles'
-import articlesEn from './src/data/articlesEn'
+import path from 'path';
+import articles from './src/data/articles';
+import articlesEn from './src/data/articlesEn';
 
 export default {
   getRoutes: async () =>  

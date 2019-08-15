@@ -1,0 +1,62 @@
+{
+  "prefetchRate": 5,
+  "maxThreads": null,
+  "disableRoutePrefixing": false,
+  "outputFileRate": 100,
+  "extensions": [
+    ".js",
+    ".jsx"
+  ],
+  "minLoadTime": 200,
+  "disablePreload": false,
+  "disableRuntime": false,
+  "preloadPollInterval": 300,
+  "productionSourceMaps": false,
+  "entry": "index.js",
+  "plugins": [
+    [
+      "C:\\Users\\lahva\\Desktop\\ArtFolio\\node_modules\\react-static-plugin-source-filesystem\\node.api.js",
+      {
+        "location": "C:\\Users\\lahva\\Desktop\\ArtFolio\\src\\pages"
+      }
+    ],
+    "C:\\Users\\lahva\\Desktop\\ArtFolio\\node_modules\\react-static-plugin-reach-router\\browser.api.js",
+    "C:\\Users\\lahva\\Desktop\\ArtFolio\\node_modules\\react-static-plugin-sitemap\\dist\\node.api.js",
+    "C:\\Users\\lahva\\Desktop\\ArtFolio\\node_modules\\react-static-plugin-styled-components\\node.api.js",
+    "C:\\Users\\lahva\\Desktop\\ArtFolio"
+  ],
+  "paths": {
+    "ROOT": "C:\\Users\\lahva\\Desktop\\ArtFolio",
+    "SRC": "C:\\Users\\lahva\\Desktop\\ArtFolio\\src",
+    "DIST": "C:\\Users\\lahva\\Desktop\\ArtFolio\\dist",
+    "ASSETS": "C:\\Users\\lahva\\Desktop\\ArtFolio\\dist",
+    "PLUGINS": "C:\\Users\\lahva\\Desktop\\ArtFolio\\plugins",
+    "TEMP": "C:\\Users\\lahva\\Desktop\\ArtFolio\\tmp",
+    "ARTIFACTS": "C:\\Users\\lahva\\Desktop\\ArtFolio\\artifacts",
+    "PUBLIC": "C:\\Users\\lahva\\Desktop\\ArtFolio\\public",
+    "NODE_MODULES": "C:\\Users\\lahva\\Desktop\\ArtFolio\\node_modules",
+    "EXCLUDE_MODULES": "C:\\Users\\lahva\\Desktop\\ArtFolio\\node_modules",
+    "PACKAGE": "C:\\Users\\lahva\\Desktop\\ArtFolio\\package.json",
+    "HTML_TEMPLATE": "C:\\Users\\lahva\\Desktop\\ArtFolio\\dist\\index.html",
+    "STATIC_DATA": "C:\\Users\\lahva\\Desktop\\ArtFolio\\dist\\staticData"
+  },
+  "siteRoot": "",
+  "basePath": "",
+  "publicPath": "/",
+  "assetsPath": "",
+  "extractCssChunks": false,
+  "inlineCss": false,
+  "babelExcludes": [],
+  "devServer": {
+    "host": "localhost",
+    "port": 3000
+  },
+  "terser": {
+    "terserOptions": {
+      "mangle": {},
+      "parse": {},
+      "compress": {},
+      "output": {}
+    }
+  }
+}

@@ -3,6 +3,7 @@ import {Root, Routes} from 'react-static';
 import styled, {createGlobalStyle} from 'styled-components';
 import BurgerNav from './components/BurgerNav'
 import NavBar from './components/NavBar';
+import {LangProvider} from './LangContext';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -26,20 +27,18 @@ const Body=styled.div `
             margin-top:80px;
             margin-bottom:20px;
 `
-
-
-
-
 function App() {
   return (
         <Root>
           <React.Suspense fallback={<em>Loading...</em>}>
             <GlobalStyle/>
+            <LangProvider>
             <BurgerNav/>
             <NavBar/>
             <Body>
               <Routes path="*"/>
             </Body>
+            </LangProvider>
           </React.Suspense>
         </Root>
   )};

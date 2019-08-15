@@ -1,6 +1,9 @@
 import React,{useState} from 'react';
 import styled from 'styled-components';
 import LangNav from '../components/LangNav'
+import Navigate from '../components/Navigate';
+import Social from '../components/SocialNW';
+import Logo from '../components/Logo';
 
 const Nav = styled.nav`
     @media only screen and (min-height:450px)  and (orientation:landscape){
@@ -13,26 +16,36 @@ const Nav = styled.nav`
     z-index:+2;
     background-color: #ffff;
     width:100%;
-    padding-bottom:0px;
-    padding-top:65px;
+    padding-bottom:10px;
+    padding-top: 10px; 
+    display:grid;
+    grid-template-columns:repeat(12,8.333vw);
+    grid-auto-rows:minmax(1vw,auto);
+    .LangNav{
+    grid-column:1/4;
+    grid-row:1/2;
+    padding:10px;
+  }
+  .Logo{
+    grid-column:1/6;
+    grid-row:1/2;
+    margin-left:10px;}
+  .Social{
+    grid-column:1/13;
+    grid-row:3/4;
+    margin:auto;}
+  .Navigate{
+    grid-column:1/13;
+    grid-row:2/3;
+  }   
 `
 const Img=styled.img `
-    position:absolute;
-    top:15px;
-    right:5px;
-    margin:0px;
-    padding: 10px;
+    grid-column:11/13;
+    grid-row:1/2;
     width:30px;
     height:auto;
-`
-const Logo=styled.img `
-    position:absolute;
-    top:15px;
-    left:15px;
-    margin:0px;
-    padding:0px;
-    width:auto;
-    height:40px;
+    padding:10px;
+    margin:auto;
 `
  export default function BNav() {
     const [click, setClick] =useState(false);
@@ -44,10 +57,12 @@ const Logo=styled.img `
                     <Img src="/icons/close.svg" onClick={close} />
                     <br/>
                     <LangNav/>
+                    <Navigate/>
+                    <Social/>
                 </Nav>)}
         return(
             <Nav>
-                <Logo src="/icons/logo2.svg"/>
+                <Logo/>
                 <Img src="/icons/menu.svg" onClick={open}/>
             </Nav>)};
 
