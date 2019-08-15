@@ -5,10 +5,22 @@ const OMe=styled.div `
 display:grid;
 grid-template-columns:repeat(12,8.333vw);
 grid-auto-rows:minmax(1vw,auto);
-.head{};
-.about{};
-.offer{};
-.quote{};
+.head{
+    grid-column:2/12;
+    grid-row:1/2;
+};
+.about{
+    grid-column:2/12;
+    grid-row:2/3;
+};
+.offer{
+    grid-column:2/12;
+    grid-row:3/4;
+};
+.quote{
+    grid-column:2/12;
+    grid-row:4/5;
+};
 `
 export default () =>(
     <OMe>
