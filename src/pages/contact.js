@@ -6,8 +6,14 @@ const Contact=styled.div `
 display:grid;
 grid-template-columns:repeat(12,8.333vw);
 grid-auto-rows:minmax(1vw,auto);
-.basic{};
-.more{};
+.basic{
+    grid-column:1/13;
+    grid-row:1/2;
+    };
+.more{
+    grid-column:1/13;
+    grid-row:2/3;
+};
 `
 
 const Message = ()=>{
@@ -23,7 +29,6 @@ const Message = ()=>{
 
 export default () =>(
     <Contact>
-        <h1>Kontakt</h1>
         <div className="basic">
             <p>fischmeister.art@gmail.com<br/>
                 tel. 00420 607 028 769<br/>
