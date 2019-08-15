@@ -7,11 +7,11 @@ display:grid;
 grid-template-columns:repeat(12,8.333vw);
 grid-auto-rows:minmax(1vw,auto);
 .basic{
-    grid-column:1/13;
+    grid-column:2/12;
     grid-row:1/2;
     };
 .more{
-    grid-column:1/13;
+    grid-column:2/12;
     grid-row:2/3;
 };
 `
