@@ -47,8 +47,7 @@ const Overlay= styled.span`
         width:100%;
         height:120px;
         padding:40px;
-        h1{margin:0;
-        padding:0;}
+        h1{margin:auto 0;}
         }
     @media(hover: hover){${Box} &:hover{
         opacity:1;
