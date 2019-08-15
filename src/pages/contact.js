@@ -1,6 +1,14 @@
 import React,{useContext} from 'react';
 import {LangContext} from '../LangContext';
+import styled from 'styled-components';
 
+const Contact=styled.div `
+display:grid;
+grid-template-columns:repeat(12,8.333vw);
+grid-auto-rows:minmax(1vw,auto);
+.basic{};
+.more{};
+`
 
 const Message = ()=>{
     const [lang,setLang]= useContext(LangContext);
@@ -14,17 +22,19 @@ const Message = ()=>{
     default:return null;}};
 
 export default () =>(
-    <div>
+    <Contact>
         <h1>Kontakt</h1>
-        <div>
+        <div className="basic">
             <p>fischmeister.art@gmail.com<br/>
                 tel. 00420 607 028 769<br/>
                 IČ: 07798164
             </p>
+        </div>
+        <div className="more">
             <Message/>
             <a href="https://www.facebook.com/martinafischmeister/" target="_blank">Facebook</a>
             <a href="https://www.instagram.com/fischmeisterr/" target="_blank">Instagram</a>
             <a>Behance</a>
         </div>
-    </div>
+    </Contact>
     );

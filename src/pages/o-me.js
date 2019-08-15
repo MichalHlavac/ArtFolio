@@ -1,42 +1,44 @@
-
-/*import styled from 'styled-components';*/
 import React from 'react';
-import UConstruction from 'components/construction';
+import styled from 'styled-components';
 
-export default () =>(
-    <div>
-        <UConstruction/>
-    </div>
-    )
-
-/*const OMe=styled.div `
-margin-left:auto;
-margin-right:auto;
-text-align:center;
-max-width:900px;
+const OMe=styled.div `
+display:grid;
+grid-template-columns:repeat(12,8.333vw);
+grid-auto-rows:minmax(1vw,auto);
+.head{};
+.about{};
+.offer{};
+.quote{};
 `
 export default () =>(
     <OMe>
+        <span className="head">
+            <h1>Martina Fischmeister {"("}­ *1995{")"}</h1>
+            <p>Česká ilustrátorka a malířka, žijící v Praze.</p>
+        </span>
     
-        <h1>Martina Fischmeister *1995</h1>
-        <p>
+        <p className="about">
+            Vystudovala jsem Soukromou střední uměleckou školu designu s.r.o., obor Užitá malba (akad. mal. Jaroslav Klát) a získala titul na Art&Design Institut v Praze, obor Výtvarná tvorba a umělecký provoz, pod vedením doc. Romana Franty a prof. Jiřího Lindovského.
 
+            Profesionálně se věnuji tvorbě knižní a editorial ilustrace, také se zabývám tvorbou komiksů, návrhů na tetování a olejomaleb.
 
-Česká ilustrátorka a malířka, žijící v Praze.
+            Moje ilustrace pravidelně vycházejí v novinách Právo, v magazínu Salon a také v knihách na českém a anglickém trhu. 
+        </p>
 
-Vystudovala Art{"&"}Design Institut v Praze, pod vedením doc. Romana Franty a prof. Jiřího Lindovského.
-
-Profesionálně se věnuje tvorbě knižní a editorial ilustrace, ale také se zabývá tvorbou komiksů a návrhů na tetování.
-
-Její ilustrace pravidelně vycházejí v novinách Právo, v magazínu Salon a také v knihách na českém a anglickém trhu. 
-
-Pro práce Martiny Fischmeister se nejvíce hodí slova „cool digital“.
-Její ilustrace rozhodně reprezentují trend v současné české ilustraci: povšimněte si živých barev, které září skrz monitory a stejně tak magazínové stránky.
-Martina má silnou kresbu a sebevědomě zachází s digitálními štětci. Snad nejvíce si je jistá v kreslení nejobávanější věci mezi ilustrátory – lidská figura a obličej.
-V jejích ilustracích je rozkládá, ořezává a využívá zajímavého osvětlení. Je freerider mezi médii a její styl se hodí na různé zakázky.
-
-
-
-</p>
+        <span className="offer">
+            <h2>Co Vám můžu nabídnout?</h2>
+            <p>
+                Mohu pro Vás ilustrovat knihy, články, weby, plakáty, zpracovat svatební oznámení, návrh na tetování nebo vyhotovit portrét. Projektům se meze nekladou!
+            </p>
+        </span>
+        <br/>
+        <p className="quote">
+            Pro práce Martiny Fischmeister se nejvíce hodí slova „cool digital“.
+            Její ilustrace rozhodně reprezentují trend v současné české ilustraci: povšimněte si živých barev, které září skrz monitory a stejně tak magazínové stránky.
+            Martina má silnou kresbu a sebevědomě zachází s digitálními štětci. Snad nejvíce si je jistá v kreslení nejobávanější věci mezi ilustrátory – lidské figury a obličeje.
+            V jejích ilustracích je rozkládá, ořezává a využívá zajímavého osvětlení. Je freerider mezi médii a její styl se hodí na různé zakázky.
+            <br/>
+            -Toybox
+        </p>
     </OMe>
-    )*/
+    )
