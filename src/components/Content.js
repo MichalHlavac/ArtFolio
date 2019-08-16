@@ -16,6 +16,7 @@ const Contt=styled.div `
 `
 const Img=styled.img`
 width:600px;
+height:auto;
 `
 const Item=styled.div `
             width:600px;
@@ -32,13 +33,11 @@ const content = props.content;
 
 return(
         <Contt>
-            
-            
+          <h1>{content.name}</h1>
+          <p>{content.description}</p>  
           {content.resources.map(resource =>(
             <Item className='index' key={resource.name}>
-              <Img  src={resource.image} alt={resource.id}/>
-              <h2>{resource.name}</h2>
-              <p>{resource.description}</p>
+              <Img  src={resource.image} alt={resource.name}/>
             </Item>))}             
         </Contt>
     )
