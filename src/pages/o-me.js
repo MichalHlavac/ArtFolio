@@ -26,7 +26,8 @@ grid-auto-rows:minmax(1vw,auto);
 export default () =>(
     <OMe>
         <span className="head">
-            <h1>Martina Fischmeister {"("}­ *1995{")"}</h1>
+            <img src="/IMG/profileImg.jpg" alt="Martina Fischmeister"/>
+            <h1>Martina Fischmeister *1995</h1>
             <p>Česká ilustrátorka a malířka, žijící v Praze.</p>
         </span>
     
@@ -45,13 +46,16 @@ export default () =>(
             </p>
         </span>
         <br/>
-        <p className="quote">
+        <span  className="quote">
+            <p>
             Pro práce Martiny Fischmeister se nejvíce hodí slova „cool digital“.
             Její ilustrace rozhodně reprezentují trend v současné české ilustraci: povšimněte si živých barev, které září skrz monitory a stejně tak magazínové stránky.
             Martina má silnou kresbu a sebevědomě zachází s digitálními štětci. Snad nejvíce si je jistá v kreslení nejobávanější věci mezi ilustrátory – lidské figury a obličeje.
             V jejích ilustracích je rozkládá, ořezává a využívá zajímavého osvětlení. Je freerider mezi médii a její styl se hodí na různé zakázky.
             <br/>
             -Toybox
-        </p>
+            </p>
+        </span>
+        
     </OMe>
     )

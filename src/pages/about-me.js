@@ -25,10 +25,9 @@ grid-auto-rows:minmax(1vw,auto);
 `
 export default () =>(
     <AboutMe>
-
         <span className="head">
             <img src="/IMG/profileImg.jpg" alt="Martina Fischmeister"/>
-            <h1>Martina Fischmeister {"("}­ *1995{")"}</h1>
+            <h1>Martina Fischmeister *1995</h1>
             <p>Czech illustrator and painter, residing and working in Prague.</p>
         </span>
     
@@ -45,7 +44,8 @@ export default () =>(
             </p>
         </span>
         <br/>
-        <p className="quote">
+        <span  className="quote">
+            <p>
             For the work of Martina Fischmeister the most suitable words are „cool digital“.
             Her illustrations definetly represent a trend in the contemporary czech illustration: please note the juicy colours that seem to shine out of the digital monitors as well as magazine‘s pages.
             Martina has a sovereign drawing and confident treatment of brushes.
@@ -53,6 +53,7 @@ export default () =>(
             In her illustration she cuts them, sinks them under different kinds of liquids and uses interesting lighting. She is a media freerider and her style suits well to different comissions.
             <br/>
             -Toybox
-        </p>
+            </p>
+        </span>
     </AboutMe>
     )
