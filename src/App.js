@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
     width:100%;
     height:100%;
     box-sizing:border-box;
-    h1{font-size:14px;}
+    h1{font-size:0.8em;}
   }
   a {
     text-decoration: none;
