@@ -13,17 +13,17 @@ export default function (){
     switch(lang){
       case 'en':
         return(
-          <Logo>
+          <Logo className="Logo">
             <Link to='/en'>
-                <img className="Logo" src="/icons/logo2.svg"/>
+                <img src="/icons/logo2.svg"/>
             </Link>
           </Logo>
             );
       case 'cz' :
         return(
-            <Logo>
+            <Logo className="Logo" >
             <Link to='/cz'>
-                <img className="Logo" src="/icons/logo2.svg"/>
+                <img src="/icons/logo2.svg"/>
             </Link>
           </Logo>
           );
