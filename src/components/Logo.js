@@ -5,8 +5,6 @@ import {LangContext} from '../LangContext';
 const Logo=styled(Link) `
     margin:0px;
     padding:0px;
-    width:auto;
-    height:40px;
 `
 const Img=styled.img `
     margin:0px;
