@@ -1,3 +1,4 @@
+import React from  'react';
 import path from 'path';
 import articles from './src/data/articles';
 import articlesEn from './src/data/articlesEn';
