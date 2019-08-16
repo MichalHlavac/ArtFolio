@@ -22,7 +22,7 @@ export default function (){
       case 'cz' :
         return(
             <Logo className="Logo" >
-            <Link to='/cz'>
+            <Link to='/'>
                 <img src="/icons/logo2.svg"/>
             </Link>
           </Logo>
