@@ -8,7 +8,8 @@ grid-auto-rows:minmax(1vw,auto);
 .head{
     grid-column:2/12;
     grid-row:1/2;
-    img{max-width:450px;}
+    img{width:450px;
+        max-width:100%;}
 };
 .about{
     grid-column:2/12;
