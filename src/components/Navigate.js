@@ -17,7 +17,7 @@ const SLink=styled(Link) `
   text-decoration:none;
   text-align: center;
   font-size:25px;
-  margin:10px 18px 10px 18px;
+  margin:10px 15px 10px 15px;
 `
 export default function (){
     const [lang,setLang] = useContext(LangContext);
