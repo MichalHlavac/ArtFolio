@@ -2,11 +2,7 @@ import React,{useContext} from 'react';
 import styled from 'styled-components';
 import {Link} from '@reach/router'
 import {LangContext} from '../LangContext';
-const Logo=styled(Link) `
-    margin:0px;
-    padding:0px;
-`
-const Img=styled.img `
+const Logo=styled.div `
     margin:0px;
     padding:0px;
     width:auto;
@@ -17,17 +13,18 @@ export default function (){
     switch(lang){
       case 'en':
         return(
-          
-            <Logo to='/en'>
-                <Img className="Logo" src="/icons/logo2.svg"/>
-            </Logo>
+          <Logo>
+            <Link to='/en'>
+                <img className="Logo" src="/icons/logo2.svg"/>
+            </Link>
+          </Logo>
             );
       case 'cz' :
         return(
-          
-            <Logo to='/'>
-                <Img className="Logo" src="/icons/logo2.svg"/>
-            </Logo>
-            
+            <Logo>
+            <Link to='/cz'>
+                <img className="Logo" src="/icons/logo2.svg"/>
+            </Link>
+          </Logo>
           );
       default:return null;}};

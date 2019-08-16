@@ -46,6 +46,6 @@ export default()=>(
     <LangNav/>
     <Navigate/>
     <Social/>
-    <Logo className="Logo"/>
+    <Logo/>
   </NavBar>
 );
