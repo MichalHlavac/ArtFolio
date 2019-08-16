@@ -40,7 +40,7 @@ const Overlay= styled.span`
     box-sizing:border-box;
     @media (hover: none)
         { opacity:1;
-            background-color: rgba(0,0,0,1);
+            background-color: rgba(0,0,0,0.6);
         color:white;
         position:absolute;
         bottom:0;
