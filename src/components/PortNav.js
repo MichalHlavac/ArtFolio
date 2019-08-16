@@ -1,8 +1,7 @@
 import React from 'react';
 import {Link} from '@reach/router';
 import styled from 'styled-components';
-import "animate.css/animate.min.css";
-import ScrollAnimation from 'react-animate-on-scroll';
+
 
 const Nav=styled.div `
     display:flex;
