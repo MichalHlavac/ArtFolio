@@ -10,7 +10,10 @@ const Logo=styled.div `
     width:auto;
     height:40px;
 `
-
+const Img=styled.img `
+    width:auto;
+    height:40px;
+`
 export default function (){
     const [lang,setLang] = useContext(LangContext);
     switch(lang){
@@ -18,7 +21,7 @@ export default function (){
         return(
           <Logo className="Logo">
             <Link to='/en'>
-                <img src="/icons/logo2.svg"/>
+                <Img src="/icons/logo2.svg"/>
             </Link>
           </Logo>
             );
@@ -26,7 +29,7 @@ export default function (){
         return(
             <Logo className="Logo" >
             <Link to='/'>
-                <img src="/icons/logo2.svg"/>
+                <Img src="/icons/logo2.svg"/>
             </Link>
           </Logo>
           );
