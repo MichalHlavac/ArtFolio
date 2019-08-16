@@ -62,7 +62,7 @@ const Img=styled.img `
                 </Nav>)}
         return(
             <Nav>
-                <Logo/>
+                <Logo className="Logo"/>
                 <Img src="/icons/menu.svg" onClick={open}/>
             </Nav>)};
 
