@@ -41,7 +41,7 @@ export default () =>(
             <Message/>
             <a href="https://www.facebook.com/martinafischmeister/" target="_blank">Facebook</a>
             <a href="https://www.instagram.com/fischmeisterr/" target="_blank">Instagram</a>
-            <a>Behance</a>
+            <a href="https://www.behance.net/fischmeister">Behance</a>
         </div>
     </Contact>
     );
