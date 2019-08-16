@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import {Link} from '@reach/router'
 import {LangContext} from '../LangContext';
 const Logo=styled.div `
+    box-sizing:border-box;
+    overflow:hidden;
     margin:0px;
     padding:0px;
     width:auto;
