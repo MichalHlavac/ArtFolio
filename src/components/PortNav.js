@@ -51,7 +51,7 @@ const Overlay= styled.span`
         }
     @media(hover: hover){${Box} &:hover{
         opacity:1;
-        background-color: rgba(0,0,0,0.5);
+        background-color: rgba(0,0,0,1);
         color:white;}}
 `
 export default function PortNav(props){
