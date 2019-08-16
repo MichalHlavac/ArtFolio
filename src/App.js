@@ -13,7 +13,6 @@ const GlobalStyle = createGlobalStyle`
     width:100%;
     height:100%;
     box-sizing:border-box;
-    h1{font-size:90%;};
   }
   a {
     text-decoration: none;
@@ -22,6 +21,7 @@ const GlobalStyle = createGlobalStyle`
   img {
     max-width: 100%;
   }
+  h1{font-size:90%;};
 `
 
 const Body=styled.div `
