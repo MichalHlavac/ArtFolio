@@ -2,7 +2,7 @@ import React,{useContext} from 'react';
 import styled from 'styled-components';
 import {Link} from '@reach/router'
 import {LangContext} from '../LangContext';
-const Logo=styled.img `
+const Logo=styled(Link) `
     margin:0px;
     padding:0px;
     width:auto;
@@ -14,16 +14,16 @@ export default function (){
       case 'en':
         return(
           
-            <Link to='/en'>
-                <Logo className="Logo" src="/icons/logo2.svg"/>
-            </Link>
+            <Logo to='/en'>
+                <img className="Logo" src="/icons/logo2.svg"/>
+            </Logo>
             );
       case 'cz' :
         return(
           
-            <Link to='/'>
-                <Logo className="Logo" src="/icons/logo2.svg"/>
-            </Link>
+            <Logo to='/'>
+                <img className="Logo" src="/icons/logo2.svg"/>
+            </Logo>
             
           );
       default:return null;}};
