@@ -38,7 +38,7 @@ const articles = [
     ]
   },
   {
-    name: 'Divočina',
+    name: 'Divočina: Povídky pro Duhu',
     image:'/IMG/divocina/divocina.jpg',
     id: 'divocina',
     description: '',
