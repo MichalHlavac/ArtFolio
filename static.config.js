@@ -37,6 +37,27 @@ export default {
         template: 'src/pages/about-me'
       },
     ],
+    Document: ({
+      Html,
+      Head,
+      Body,
+      children,
+      state: { siteData, renderMeta },
+    }) => (
+        <Html lang="cs">
+          <Head>
+            <title>Martina Fischmeister</title>
+            <meta charSet="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <meta name="description" content="Fourth Drive is the moniker of the Israeli music producer Gal" />
+            <meta name="author" content="Michal Hlaváč" />
+            <meta name="keywords" content="Martina Fischmeister,ilustration" />
+            <link rel="icon" type="image/svg" href="logo.svg" />
+          </Head>
+          <Body>{children}</Body>
+        </Html>
+      ),
+  
   plugins: [
     [
       require.resolve('react-static-plugin-source-filesystem'),
