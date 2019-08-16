@@ -14,6 +14,7 @@ grid-auto-rows:minmax(1vw,auto);
     grid-column:2/12;
     grid-row:2/3;
     display:block;
+    a{display:block;}
 };
 `
 
