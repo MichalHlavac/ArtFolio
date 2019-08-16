@@ -38,7 +38,7 @@ const NavBar = styled.nav`
   .Navigate{
     grid-column:3/9;
     grid-row:1/2;
-    margin:auto;
+    margin-left:auto;
   }   
 `
 export default()=>(
