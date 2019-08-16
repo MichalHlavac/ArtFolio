@@ -1,5 +1,42 @@
 const articles = [
-  
+  {
+    name: 'Právo newspaper',
+    image:'/IMG/pravoNewspaper/pravo.jpg',
+    id: 'pravo',
+    description: '',
+    resources:[
+      { 
+        name:'Pravo1',
+        image:'/IMG/pravoNewspaper/pravo_1.jpg',
+        description: '',
+      },
+      { 
+        name:'Pravo2',
+        image:'/IMG/pravoNewspaper/pravo_2.jpg',
+        description: '',
+      },
+      { 
+        name:'Pravo3',
+        image:'/IMG/pravoNewspaper/pravo_3.jpg',
+        description: '',
+      },
+      { 
+        name:'Pravo4',
+        image:'/IMG/pravoNewspaper/pravo_4.jpg',
+        description: '',
+      },
+      { 
+        name:'Pravo5',
+        image:'/IMG/pravoNewspaper/pravo_5.jpg',
+        description: '',
+      },
+      { 
+        name:'Pravo6',
+        image:'/IMG/pravoNewspaper/pravo_6.jpg',
+        description: '',
+      },
+    ]
+  },
   {
     name: 'Divočina',
     image:'/IMG/divocina/divocina.jpg',
@@ -40,36 +77,6 @@ const articles = [
       { 
         name:'Divocina7',
         image:'/IMG/divocina/divocina_7.jpg',
-        description: '',
-      },
-      { 
-        name:'Divocina8',
-        image:'/IMG/divocina/divocina_8.jpg',
-        description: '',
-      },
-      { 
-        name:'Divocina9',
-        image:'/IMG/divocina/divocina_9.jpg',
-        description: '',
-      },
-      { 
-        name:'Divocina10',
-        image:'/IMG/divocina/divocina_10.jpg',
-        description: '',
-      },
-      { 
-        name:'Divocina11',
-        image:'/IMG/divocina/divocina_11.jpg',
-        description: '',
-      },
-      { 
-        name:'Divocina12',
-        image:'/IMG/divocina/divocina_12.jpg',
-        description: '',
-      },
-      { 
-        name:'Divocina13',
-        image:'/IMG/divocina/divocina_13.jpg',
         description: '',
       },
     ],  
