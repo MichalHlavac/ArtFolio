@@ -57,7 +57,7 @@ const Img=styled.img `
                     <Img src="/icons/close.svg" onClick={close} />
                     <br/>
                     <LangNav/>
-                    <Navigate/>
+                    <Navigate onClick={close}/>
                     <Social/>
                 </Nav>)}
         return(
