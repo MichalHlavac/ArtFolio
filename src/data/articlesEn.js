@@ -38,10 +38,19 @@ const articles = [
     ]
   },
   {
-    name: 'Divočina',
+    name: 'Wilderness: Stories for Duha',
     image:'/IMG/divocina/divocina.jpg',
     id: 'divocina',
-    description: '',
+    description: `It was an honor to create illustrations and cover images
+    for a book Divočina: Povídky pro Duhu (Wilderness: Stories for Duha). 
+    The book contains over 20 illustrations by me. 
+    All proceeds go to a charity organization Duha, 
+    which seeks to restore forests and wilderness in the Czech Republic. 
+    The project started over 2 years ago,
+     when I was tasked to illustrate short stories for newspaper Právo. 
+    Since then, the stories piled on and finally were published in a book form by Novela Bohemica. 
+    So with this book you can hopefully see my path how I grew as an illustrator, 
+    from realistic renders to a more simplified and relaxed form.`,
     
     resources: [
       { 
