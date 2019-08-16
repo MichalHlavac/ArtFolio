@@ -53,7 +53,7 @@ export default {
             <meta name="description" content="Fourth Drive is the moniker of the Israeli music producer Gal" />
             <meta name="author" content="Michal Hlaváč" />
             <meta name="keywords" content="Martina Fischmeister,ilustration" />
-            <link rel="icon" type="image/png" href="logo.png" />
+            <link rel="icon" type="image/png" href="icons/logo.png" />
           </Head>
           <Body>{children}</Body>
         </Html>
