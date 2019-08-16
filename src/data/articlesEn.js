@@ -178,7 +178,7 @@ const articles = [
   },  
  
   {
-    name: 'Choice',
+    name: 'The Choice',
     image:'/IMG/volba/volba.jpg',
     id: 'volba',
     description: '',
