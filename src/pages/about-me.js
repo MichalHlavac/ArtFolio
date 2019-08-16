@@ -25,7 +25,9 @@ grid-auto-rows:minmax(1vw,auto);
 `
 export default () =>(
     <AboutMe>
+
         <span className="head">
+            <img src="/IMG/profileImg.jpg" alt="Martina Fischmeister"/>
             <h1>Martina Fischmeister {"("}­ *1995{")"}</h1>
             <p>Czech illustrator and painter, residing and working in Prague.</p>
         </span>
