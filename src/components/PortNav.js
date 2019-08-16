@@ -35,7 +35,7 @@ const Overlay= styled.span`
     max-width:400px;
     max-height:400px;
     opacity:0;
-    padding:160px 10px;
+    padding:auto 10px;
     box-sizing:border-box;
     @media (hover: none)
         { 
