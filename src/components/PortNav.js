@@ -36,12 +36,14 @@ const Overlay= styled.span`
     max-width:400px;
     max-height:400px;
     opacity:0;
-    padding:160px 0;
+    padding:160px 10px;
     box-sizing:border-box;
     @media (hover: none)
-        { opacity:1;
-            background-color: rgba(0,0,0,0.5);
+        { 
+        opacity:1;
+        background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.8));
         color:white;
+        padding:240px 10px 80px 10px;
         }
     @media(hover: hover){${Box} &:hover{
         opacity:1;
