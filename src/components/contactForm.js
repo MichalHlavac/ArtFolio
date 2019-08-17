@@ -13,7 +13,7 @@ export default ()=> {
     const [message,setMessage]=useState('');
     const handleSubmit = event => {
         event.preventDefault();
-        const Mail = [{"email":email},{"message":message}];
+        const Mail = {"email":email,"message":message};
                 axios.post('/', encode({ 'form-name': 'contact',...Mail }), {
                 headers: { 'Content-Type': 'application/x-www-form-urlencoded' },})
                 .then(setSubmitted(true))
