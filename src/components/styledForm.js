@@ -5,8 +5,12 @@ const CForm=styled.div `
     grid-row:3/4;
     width:300px;
     max-width:100%;
+    padding:15px;
+    box-sizing:border-box;
+    border:2px solid black;
     .thanks{}
     .Form{
+        width:100%;
         input{display:block;
             width:100%;
             padding:2px;
