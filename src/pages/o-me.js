@@ -9,7 +9,8 @@ grid-auto-rows:minmax(1vw,auto);
     grid-column:2/12;
     grid-row:1/2;
     img{width:450px;
-        max-width:100%;}
+        max-width:100%;
+        float:left;}
 };
 .about{
     grid-column:2/12;
