@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import axios from 'axios';
-
+import {CForm} from './styledForm';
 
 function encode(data) {
     return Object.keys(data)
@@ -23,7 +23,7 @@ export default ()=> {
                 .then(res=>{setSubmitted(true)});
     }
     return (
-        <div className="CForm">
+        <CForm className="CForm">
             {submitted ? 
                 (
                     <p className="thanks">
@@ -32,6 +32,7 @@ export default ()=> {
                     </p>
                 ):(
                     <form
+                        className="Form"
                         name="contact"
                         method="post"
                         data-netlify="true"
@@ -47,7 +48,7 @@ export default ()=> {
                     </form>
                 )
             }
-        </div>
+        </CForm>
     )
 }
       
