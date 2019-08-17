@@ -17,8 +17,8 @@ export default ()=>{
     
     return(
         <form className="CForm"  name="contact" netlify="true" onSubmit={Submit}>
-            <input value={email} onChange={e=> setEmail(e.target.value)}/><br/>
-            <textarea value={message} onChange={e=>setMessage(e.target.value)}/>
+            <input type="email" value={email} onChange={e=> setEmail(e.target.value)} placeholder="email"/><br/>
+            <textarea value={message} onChange={e=>setMessage(e.target.value)} placeholder="zprava"/>
             <button type="submit">send</button>
         </form>
     );
