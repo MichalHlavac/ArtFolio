@@ -28,5 +28,29 @@ grid-auto-rows:minmax(1vw,auto);
     grid-row:5/6;
     font-style:italic;
 };
+@media only screen and (min-width:900px) {
+    .portrait{
+    grid-column:2/6;
+    grid-row:1/2;
+    }
+.head{
+    grid-column:7/12;
+    grid-row:1/2;
+};
+.about{
+    grid-column:2/12;
+    grid-row:2/3;
+};
+.offer{
+    grid-column:2/12;
+    grid-row:3/4;
+};
+.quote{
+    grid-column:2/12;
+    grid-row:4/5;
+    font-style:italic;
+};
+    
+}
 `
 export{About}
