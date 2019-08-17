@@ -11,11 +11,11 @@ export default ()=> {
     const [submitted,setSubmitted]=useState(false)
     const [email,setEmail]=useState('');
     const [message,setMessage]=useState('');
+    const Mail = {"email":email,"message":message};
     const handleSubmit = event => {
         event.preventDefault();
-        const Mail = {"email":email,"message":message};
-                axios.post('/', encode({ 'form-name': 'contact',...Mail }), {
-                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },})
+                axios.post('/', encode({"form-name": "contact",...Mail }), {
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' }})
                 .then(setSubmitted(true))
     }
     return (
