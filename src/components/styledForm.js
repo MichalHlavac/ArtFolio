@@ -14,6 +14,7 @@ const CForm=styled.div `
         textarea{display:block;
             resize: none;
             width:100%;
+            height:150px;
             padding:2px;
             border-width:1px;
             };
