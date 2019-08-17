@@ -6,7 +6,9 @@ const CForm=styled.div `
     .thanks{}
     .Form{
         input{display:block;};
-        textarea{display:block;};
+        textarea{display:block;
+            resize: none;
+            };
         button{display:block;};
     }
  `
