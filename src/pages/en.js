@@ -9,7 +9,7 @@ const Portfolio=styled.div`
 `
 
 export default withRouteData( ({articlesEn}) =>(
-    <Portfolio>
+    <Portfolio lang="en">
         <PortNav articles= {articlesEn} lang='en/'/>
     </Portfolio>
 ))
