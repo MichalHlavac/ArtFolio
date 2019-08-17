@@ -64,4 +64,7 @@ export default function PortNav(props){
         </Box>
         );
     return(
-        <Nav>{items}</Nav>);};
+        <Nav>
+        <h1>Portfolio</h1>
+        {items}
+        </Nav>);};
