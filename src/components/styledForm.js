@@ -22,8 +22,19 @@ const CForm=styled.div `
             padding:2px;
             border-width:1px;
             };
-        button{display:block;
-        margin:auto 0px};
+        button{background-color:transparent;
+	-moz-border-radius:30px;
+	-webkit-border-radius:30px;
+	border-radius:30px;
+	border:3px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:14px 29px;
+	text-decoration:none;};
     }
  `
  export{CForm};
