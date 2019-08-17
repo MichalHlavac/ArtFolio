@@ -5,13 +5,15 @@ const CForm=styled.div `
     grid-row:3/4;
     .thanks{}
     .Form{
+        text-align:center;
         input{display:block;
-            width:100px;};
+            width:200;};
         textarea{display:block;
             resize: none;
-            width:100px;
+            width:100;
             };
-        button{display:block;};
+        button{display:block;
+        margin:auto 0px};
     }
  `
  export{CForm};
