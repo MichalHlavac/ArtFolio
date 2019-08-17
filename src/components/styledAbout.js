@@ -31,7 +31,7 @@ grid-auto-rows:minmax(1vw,auto);
 @media only screen and (min-width:900px) {
     .portrait{
     grid-column:2/6;
-    grid-row:1/2;
+    grid-row:1/3;
     }
 .head{
     grid-column:7/12;
