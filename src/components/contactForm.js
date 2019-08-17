@@ -16,7 +16,7 @@ export default ()=>{
             })};
     
     return(
-        <form  name="contact" netlify="true" onSubmit={Submit}>
+        <form className="CForm"  name="contact" netlify="true" onSubmit={Submit}>
             <input value={email} onChange={e=> setEmail(e.target.value)}/>
             <input value={message} onChange={e=>setMessage(e.target.value)}/>
             <button type="submit">send</button>
