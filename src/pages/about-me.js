@@ -2,7 +2,7 @@ import React from 'react';
 import {About} from '../components/styledAbout'
 
 export default () =>(
-    <About>
+    <About lang="en">
         <span className="head">
             <img src="/IMG/profileImg.jpg" alt="Martina Fischmeister"/>
             <h1>Martina Fischmeister *1995</h1>
