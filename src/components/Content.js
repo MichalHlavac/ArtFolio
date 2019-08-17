@@ -24,7 +24,11 @@ const Item=styled.div `
             display:inline-block;
             overflow:hidden;
 `
-
+const Description=styled.div `
+margin:auto;
+text-align:center;
+width:900px;
+max-width:80%;`
   
 
 
@@ -33,8 +37,10 @@ const content = props.content;
 
 return(
         <Contt>
+          <Description>
           <h1>{content.name}</h1>
-          <p>{content.description}</p>  
+          <p>{content.description}</p>
+          </Description>  
           {content.resources.map(resource =>(
             <Item className='index' key={resource.name}>
               <Img  src={resource.image} alt={resource.name}/>
