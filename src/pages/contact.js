@@ -40,7 +40,7 @@ export default () =>(
         <div className="basic">
             <p>Martina Světlíková</p>
             <p>Volutová 2521/18<br/> 158 00<br/> Praha 5 - Stodůlky</p>
-            <p>IČ: 07798164 <br/>- zapsána v živnostenském rejstříku</p>
+            <p>IČ: 07798164</p>
             <p>Fyzická osoba zapsaná<br/> v Živnostenském rejstříku od <br/>15.01.2019</p>
             <a href="mailto:fischmeister.art%40gmail.com">fischmeister.art&#064;gmail.com</a>
             <a href="tel:+420 607 028 769">tel.+420 607 028 769</a>
