@@ -23,6 +23,9 @@ const GlobalStyle = createGlobalStyle`
   img {
     max-width: 100%;
   }
+h1{font-size:32px;}
+h2{font-size:25px;}
+p{font-size:16px}
 `
 
 const Body=styled.div `
