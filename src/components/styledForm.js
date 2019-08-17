@@ -22,19 +22,20 @@ const CForm=styled.div `
             padding:2px;
             border-width:1px;
             };
-        button{background-color:transparent;
-	-moz-border-radius:30px;
-	-webkit-border-radius:30px;
-	border-radius:30px;
-	border:3px solid #000000;
-	display:inline-block;
-	cursor:pointer;
-	color:#000000;
-	font-family:Arial;
-	font-size:20px;
-	font-weight:bold;
-	padding:14px 29px;
-	text-decoration:none;};
+        button{
+            background-color:transparent;
+	        -moz-border-radius:24px;
+	        -webkit-border-radius:24px;
+	        border-radius:24px;
+	        border:3px solid #000000;
+	        display:inline-block;
+	        color:#000000;
+	        font-family:Arial;
+	        font-size:17px;
+	        font-weight:bold;
+	        padding:11px 24px;
+            margin:10px;
+	        };
     }
  `
  export{CForm};
