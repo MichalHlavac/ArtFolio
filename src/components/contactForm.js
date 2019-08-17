@@ -20,7 +20,7 @@ export default ()=> {
               window.alert('There was a problem submitting your form! Try again or reload the page')
               setSubmitted(true)}};
     return (
-        <div>
+        <div className="CForm">
             {submitted ? 
                 (
                     <p className="thanks">
