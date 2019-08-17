@@ -27,7 +27,7 @@ const Box=styled.div `
     overflow:hidden;
     margin:5px 5px 5px 5px;
 `
-const Overlay= styled.span`
+const Overlay= styled.div`
     position:absolute;
     z-index:1;
     width:100%;

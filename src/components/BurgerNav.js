@@ -54,7 +54,7 @@ const Img=styled.img `
         if (click){
             return (
                 <Nav>
-                    <Img src="/icons/close.svg" onClick={close} />
+                    <Img src="/icons/close.svg" alt="close" onClick={close} />
                     <br/>
                     <LangNav/>
                     <Navigate/>
@@ -63,7 +63,7 @@ const Img=styled.img `
         return(
             <Nav>
                 <Logo/>
-                <Img src="/icons/menu.svg" onClick={open}/>
+                <Img src="/icons/menu.svg" alt="open" onClick={open}/>
             </Nav>)};
 
   

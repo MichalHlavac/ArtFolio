@@ -13,11 +13,11 @@ const SIcon=styled.img`
 export default ()=>(
     <div className="Social">
         <a href="https://www.facebook.com/martinafischmeister/" target="_blank">
-            <SIcon src='/icons/facebook.svg'/>
+            <SIcon src='/icons/facebook.svg'alt="facebook"/>
         </a>
 
         <a href="https://www.instagram.com/fischmeisterr/" target="_blank">
-            <SIcon src='/icons/instagram.svg'/>
+            <SIcon src='/icons/instagram.svg'alt="instagram"/>
         </a>
     </div>
 );

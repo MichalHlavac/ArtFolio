@@ -11,8 +11,6 @@ const Contt=styled.div `
               margin-bottom:30px;
               max-width:2480px;
               border-bottom: 1px solid gray;
-
-
 `
 const Img=styled.img`
 width:600px;

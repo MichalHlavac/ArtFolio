@@ -47,8 +47,8 @@ export default {
     }) => (
         <Html lang="cs">
           <Head>
+            <meta charSet="UTF-8"/>
             <title>Martina Fischmeister</title>
-            <meta charSet="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <meta name="description" content="Česká ilustrátorka a malířka, žijící v Praze." />
             <meta name="author" content="Michal Hlaváč" />

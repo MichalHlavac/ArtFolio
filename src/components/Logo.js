@@ -21,7 +21,7 @@ export default function (){
         return(
           <Logo className="Logo">
             <Link to='/en'>
-                <Img src="/icons/logo2.svg"/>
+                <Img src="/icons/logo2.svg" alt=""/>
             </Link>
           </Logo>
             );
