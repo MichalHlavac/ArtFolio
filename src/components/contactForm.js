@@ -4,11 +4,11 @@ import axios from 'axios';
 const encode = data =>
   Object.keys(data)
     .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
-    .join('&')
+    .join('&');
 
 
 export default ()=> {
-    const [submitted,setSubmitted]=useState(true)
+    const [submitted,setSubmitted]=useState(false)
     const [email,setEmail]=useState('');
     const [message,setMessage]=useState('');
     const handleSubmit = async values => {
@@ -19,15 +19,15 @@ export default ()=> {
             catch (err) {
               window.alert('There was a problem submitting your form! Try again or reload the page')
               setSubmitted(true)}};
-        
     return (
         <div>
-            {submitted ? (
-                <p className="thanks">
-                  Thanks for submitting your information! We'll be in contact with you as soon as
-                  possible.
-                </p>):
+            {submitted ? 
                 (
+                    <p className="thanks">
+                    Thanks for submitting your information! We'll be in contact with you as soon as
+                    possible.
+                    </p>
+                ):(
                     <form
                       name="contact"
                       netlify="true"
@@ -39,8 +39,9 @@ export default ()=> {
                         <input name="bot-field" />
                         <button type="submit">send</button>
                     </form>
-              )}
-            </div>
-          )
-        }
+                )
+            }
+        </div>
+    )
+}
       
