@@ -7,8 +7,10 @@ import {LangProvider} from './LangContext';
 
 const GlobalStyle = createGlobalStyle`
   body {
+    h1{font-size:32px;}
+    h2{font-size:25px;}
+    p{font-size:16px}
     font-family:Arial, Helvetica, sans-serif;
-    font-size:95%;
     margin: 0;
     padding: 0;
     width:100%;
@@ -23,9 +25,6 @@ const GlobalStyle = createGlobalStyle`
   img {
     max-width: 100%;
   }
-h1{font-size:32px;}
-h2{font-size:25px;}
-p{font-size:16px}
 `
 
 const Body=styled.div `
