@@ -38,7 +38,7 @@ grid-auto-rows:minmax(1vw,auto);
     grid-row:1/2;
 };
 .about{
-    grid-column:2/12;
+    grid-column:7/12;
     grid-row:2/3;
 };
 .offer{
