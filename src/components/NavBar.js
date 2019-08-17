@@ -34,7 +34,7 @@ const NavBar = styled.nav`
   .Social{
     grid-column:9/11;
     grid-row:1/2;
-    margin:auto;}
+    margin:auto auto auto 30px;}
   .Navigate{
     grid-column:3/9;
     grid-row:1/2;
