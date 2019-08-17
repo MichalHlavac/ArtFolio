@@ -38,7 +38,7 @@ const Message = ()=>{
 export default () =>(
     <Contact>
         <div className="basic">
-            <a href="mailto:fischmeister.art%40gmail.com">fischmeister.art&#064";gmail.com</a>
+            <a href="mailto:fischmeister.art%40gmail.com">fischmeister.art&#064;gmail.com</a>
             <a href="tel:+420 607 028 769">tel.+420 607 028 769</a>
             <p>IČ: 07798164</p>
             
