@@ -1,7 +1,7 @@
 import React,{useContext} from 'react';
 import {LangContext} from '../LangContext';
 import styled from 'styled-components';
-
+import Form from '../components/contactForm';
 const Contact=styled.div `
 display:grid;
 grid-template-columns:repeat(12,8.333vw);
@@ -53,5 +53,6 @@ export default () =>(
             <a href="https://www.instagram.com/fischmeisterr/" target="_blank">Instagram</a>
             <a href="https://www.behance.net/fischmeister">Behance</a>
         </div>
+        <Form/>
     </Contact>
     );
