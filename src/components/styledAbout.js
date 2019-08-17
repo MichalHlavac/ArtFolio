@@ -30,15 +30,15 @@ grid-auto-rows:minmax(1vw,auto);
 };
 @media only screen and (min-width:900px) {
     .portrait{
-    grid-column:2/6;
+    grid-column:7/12;
     grid-row:1/4;
     }
 .head{
-    grid-column:7/12;
+    grid-column:2/6;
     grid-row:1/2;
 };
 .about{
-    grid-column:7/12;
+    grid-column:2/6;
     grid-row:2/3;
 };
 .offer{
