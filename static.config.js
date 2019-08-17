@@ -59,8 +59,8 @@ export default {
             <meta property="og:title" content="Martina Fischmeister portfolio"/>
             <meta property="og:description" content="Mohu pro Vás ilustrovat knihy, články, weby, plakáty,
              zpracovat svatební oznámení, návrh na tetování nebo vyhotovit portrét. Projektům se meze nekladou!"/>
-            <meta property="og:image" content="http://https://martina-fischmeisterr.netlify.com/IMG/personal_work/personal_work.jpg"/>
-            <meta property="og:url" content="http://https://martina-fischmeisterr.netlify.com/"/>
+            <meta property="og:image" content="https://martina-fischmeisterr.netlify.com/IMG/personal_work/personal_work.jpg"/>
+            <meta property="og:url" content="https://martina-fischmeisterr.netlify.com/"/>
           </Head>
           <Body>{children}</Body>
         </Html>
