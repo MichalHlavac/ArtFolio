@@ -9,11 +9,13 @@ const CForm=styled.div `
     .Form{
         input{display:block;
             width:100%;
-            padding:2px};
+            padding:2px;
+            border-width:1px;};
         textarea{display:block;
             resize: none;
             width:100%;
             padding:2px;
+            border-width:1px;
             };
         button{display:block;
         margin:auto 0px};
