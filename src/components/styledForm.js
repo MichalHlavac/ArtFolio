@@ -23,7 +23,7 @@ const CForm=styled.div `
             border-width:1px;
             };
         button{
-            background-color:transparent;
+            background:url(/icons/send.svg);
 	        -moz-border-radius:24px;
 	        -webkit-border-radius:24px;
 	        border-radius:24px;
