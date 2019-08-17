@@ -9,6 +9,10 @@ grid-auto-rows:minmax(1vw,auto);
 .basic{
     grid-column:2/12;
     grid-row:1/2;
+    a{
+        margin:5px;
+        display:block;
+    }
     };
 .more{
     grid-column:2/12;
@@ -34,8 +38,8 @@ const Message = ()=>{
 export default () =>(
     <Contact>
         <div className="basic">
-            <a>fischmeister.art@gmail.com</a>
-            <a>tel. 00420 607 028 769</a>
+            <a href="fischmeister.art@gmail.com">fischmeister.art@gmail.com</a>
+            <a href="+420 607 028 769">tel.+420 607 028 769</a>
             <p>IČ: 07798164</p>
             
         </div>
