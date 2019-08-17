@@ -5,9 +5,11 @@ const CForm=styled.div `
     grid-row:3/4;
     .thanks{}
     .Form{
-        input{display:block;};
+        input{display:block;
+            width:100px;};
         textarea{display:block;
             resize: none;
+            width:100px;
             };
         button{display:block;};
     }
