@@ -34,7 +34,7 @@ const CForm=styled.div `
 	        font-size:17px;
 	        font-weight:bold;
 	        padding:11px 24px;
-            margin:10px;
+            margin:auto;
 	        };
     }
  `
