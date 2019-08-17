@@ -18,7 +18,7 @@ export default () =>(
         <span className="offer">
             <h2>What can I do for You?</h2>
             <p>
-            I can illustrate books, websites, posters, wedding invitations, tattoo designs or make a portrait for you. There are no limits to projects!
+            I can illustrate Your books, websites, posters, wedding invitations, tattoo designs or make a portrait for you. There are no limits to projects!
             </p>
         </span>
         <br/>
