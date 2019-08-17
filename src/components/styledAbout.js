@@ -9,6 +9,7 @@ grid-auto-rows:minmax(1vw,auto);
     grid-row:1/2;
     width:450px;
     max-width:100%;
+    margin:auto;
     }
 .head{
     grid-column:2/12;
