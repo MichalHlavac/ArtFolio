@@ -10,7 +10,7 @@ grid-auto-rows:minmax(1vw,auto);
     grid-column:2/12;
     grid-row:1/2;
     a{
-        margin:5px;
+        margin:5px 0;
         display:block;
     }
     };
@@ -20,7 +20,7 @@ grid-auto-rows:minmax(1vw,auto);
     display:block;
     a{
         font-weight:bold;
-        margin:5px;
+        margin:5px 0;
         display:block;
     }
 };
