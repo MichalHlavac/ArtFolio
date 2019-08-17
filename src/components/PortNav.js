@@ -43,7 +43,7 @@ const Overlay= styled.div`
         opacity:1;
         background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.8));
         color:white;
-        padding:280px 10px 40px 10px;
+        padding:300px 10px 20px 10px;
         }
     @media(hover: hover){${Box} &:hover{
         opacity:1;
