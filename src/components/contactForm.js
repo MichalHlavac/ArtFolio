@@ -43,7 +43,7 @@ export default ()=> {
                             <input name="bot-field"  onChange={handleChange}/>
                         </div>
                         <input type="email" name="email" onChange={handleChange} placeholder="email"/>
-                        <textarea type="text" name="message" onChange={handleChange} placeholder="zprava"/>
+                        <textarea maxLength="500" type="text" name="message" onChange={handleChange} placeholder="zprava"/>
                         <button type="submit">send</button>
                     </form>
                 )
