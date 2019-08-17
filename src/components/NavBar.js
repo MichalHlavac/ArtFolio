@@ -30,7 +30,7 @@ const NavBar = styled.nav`
   .Logo{
     grid-column:1/3;
     grid-row:1/2;
-    margin-left:5vw;}
+    margin-left:1vw;}
   .Social{
     grid-column:9/11;
     grid-row:1/2;
