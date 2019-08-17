@@ -33,10 +33,9 @@ export default ()=> {
                       netlify="true"
                       netlify-honeypot="bot-field"
                       onSubmit={handleSubmit}>
-                        <input type="text" value={email} onChange={e=> setEmail(e.target.value)} placeholder="email"/>
-                        <textarea value={message} onChange={e=>setMessage(e.target.value)} placeholder="zprava"/>
-                        
                         <input name="bot-field" />
+                        <input type="email" value={email} onChange={e=> setEmail(e.target.value)} placeholder="email"/>
+                        <textarea value={message} onChange={e=>setMessage(e.target.value)} placeholder="zprava"/>
                         <button type="submit">send</button>
                     </form>
                 )
