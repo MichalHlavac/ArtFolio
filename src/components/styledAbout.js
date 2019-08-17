@@ -52,5 +52,29 @@ grid-auto-rows:minmax(1vw,auto);
 };
     
 }
+@media only screen and (min-width:1500px) {
+    .portrait{
+    grid-column:7/11;
+    grid-row:1/4;
+    }
+.head{
+    grid-column:3/6;
+    grid-row:1/2;
+};
+.about{
+    grid-column:3/6;
+    grid-row:2/3;
+};
+.offer{
+    grid-column:3/11;
+    grid-row:4/5;
+};
+.quote{
+    grid-column:3/11;
+    grid-row:5/6;
+    font-style:italic;
+};
+    
+}
 `
 export{About}
