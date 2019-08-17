@@ -54,7 +54,7 @@ grid-auto-rows:minmax(1vw,auto);
 }
 @media only screen and (min-width:1500px) {
     .portrait{
-    grid-column:7/11;
+    grid-column:7/10;
     grid-row:1/4;
     }
 .head{
@@ -66,11 +66,11 @@ grid-auto-rows:minmax(1vw,auto);
     grid-row:2/3;
 };
 .offer{
-    grid-column:3/11;
+    grid-column:3/10;
     grid-row:4/5;
 };
 .quote{
-    grid-column:3/11;
+    grid-column:3/10;
     grid-row:5/6;
     font-style:italic;
 };
