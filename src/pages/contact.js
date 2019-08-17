@@ -34,10 +34,10 @@ const Message = ()=>{
 export default () =>(
     <Contact>
         <div className="basic">
-            <p>fischmeister.art@gmail.com<br/>
-                tel. 00420 607 028 769<br/>
-                IČ: 07798164
-            </p>
+            <a>fischmeister.art@gmail.com</a>
+            <a>tel. 00420 607 028 769</a>
+            <p>IČ: 07798164</p>
+            
         </div>
         <div className="more">
             <Message/>
