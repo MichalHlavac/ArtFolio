@@ -14,7 +14,7 @@ grid-auto-rows:minmax(1vw,auto);
 .head{
     grid-column:2/12;
     grid-row:2/3;
-    h1{font-size:90%;}
+    h1{font-size:32px;}
 };
 .about{
     grid-column:2/12;
