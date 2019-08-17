@@ -39,7 +39,7 @@ export default ()=> {
                         onSubmit={handleSubmit}
                     >
                         <div style={{height: 0,overflow: 'hidden',}}>
-                        <input name="bot-field"  onChange={handleChange}/>
+                            <input name="bot-field"  onChange={handleChange}/>
                         </div>
                         <input type="email" name="email" onChange={handleChange} placeholder="email"/>
                         <textarea type="text" name="message" onChange={handleChange} placeholder="zprava"/>
