@@ -7,10 +7,10 @@ const CForm=styled.div `
     .Form{
         text-align:center;
         input{display:block;
-            width:200;};
+            width:100%;};
         textarea{display:block;
             resize: none;
-            width:100;
+            width:100%;
             };
         button{display:block;
         margin:auto 0px};
