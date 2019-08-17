@@ -25,13 +25,11 @@ grid-auto-rows:minmax(1vw,auto);
 const Message = ()=>{
     const [lang,setLang]= useContext(LangContext);
     switch(lang){
-    case 'en':
-      return(
-        <p>You can find news and more of my art here:</p>);
-    case 'cz' :
-      return(
-        <p>Novinky a další ukázky tvorby naleznete zde:</p>);
-    default:return null;}};
+        case 'en':
+            return(<p>You can find news and more of my art here:</p>);
+        case 'cz' :
+            return(<p>Novinky a další ukázky tvorby naleznete zde:</p>);
+        default:return null;}};
 
 export default () =>(
     <Contact>
