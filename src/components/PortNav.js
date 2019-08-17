@@ -10,6 +10,7 @@ const Nav=styled.div `
     max-width:1650px;
     margin-left:auto;
     margin-right:auto;
+    h1{display:none;}
 `
 const PortImg=styled.img`
     position:relative;
