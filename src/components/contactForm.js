@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import axios from 'axios';
-import { encode } from './encode';
+
 
 function encode(data) {
     return Object.keys(data)
