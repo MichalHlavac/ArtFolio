@@ -5,7 +5,9 @@ const CForm=styled.div `
     grid-row:3/4;
     .thanks{}
     .Form{
-        display:block;
+        input{display:block;};
+        textarea{display:block;};
+        button{display:block;};
     }
  `
  export{CForm};
