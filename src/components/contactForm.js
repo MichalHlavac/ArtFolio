@@ -44,7 +44,7 @@ export default ()=> {
                         </div>
                         <input type="email" name="email" onChange={handleChange} placeholder="email" required/>
                         <textarea maxLength="500" type="text" name="message" onChange={handleChange} placeholder="zprava" required/>
-                        <button type="submit">send</button>
+                        <button type="submit"><img src="/icons/send.svg" alt="odeslat"/></button>
                     </form>
                 )
             }
