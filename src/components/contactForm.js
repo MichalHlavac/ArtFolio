@@ -6,10 +6,10 @@ export default ()=>{
     const [message,setMessage]=useState('');
     const Submit = event =>{
         event.preventDefault();
-        const Post =[{"email":email},{"message":message}]
+        const Post ={"email":email,"message":message}
         axios.post(
             '/',Post , 
-            {headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            {headers: { 'Content-Type':  'application/json' },
               })
             .then(res => {
               console.log(Post);
@@ -17,7 +17,7 @@ export default ()=>{
     
     return(
         <form className="CForm"  name="contact" netlify="true" onSubmit={Submit}>
-            <input type="email" value={email} onChange={e=> setEmail(e.target.value)} placeholder="email"/><br/>
+            <input value={email} onChange={e=> setEmail(e.target.value)} placeholder="email"/>
             <textarea value={message} onChange={e=>setMessage(e.target.value)} placeholder="zprava"/>
             <button type="submit">send</button>
         </form>
