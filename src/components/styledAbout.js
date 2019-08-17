@@ -7,7 +7,7 @@ grid-auto-rows:minmax(1vw,auto);
 .portrait{
     grid-column:2/12;
     grid-row:1/2;
-    width:450px;
+    width:380px;
     max-width:100%;
     margin:auto;
     }
