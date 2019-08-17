@@ -56,6 +56,11 @@ export default {
             <meta name="keywords" content="Martina Fischmeister,ilustration,Fischmaister ilustration" />
             <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-logo-16.png" />
             <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-logo-32.png" />
+            <meta property="og:title" content="Martina Fischmeister portfolio"/>
+            <meta property="og:description" content="Mohu pro Vás ilustrovat knihy, články, weby, plakáty,
+             zpracovat svatební oznámení, návrh na tetování nebo vyhotovit portrét. Projektům se meze nekladou!"/>
+            <meta property="og:image" content="http://https://martina-fischmeisterr.netlify.com/IMG/personal_work/personal_work.jpg"/>
+            <meta property="og:url" content="http://https://martina-fischmeisterr.netlify.com/"/>
           </Head>
           <Body>{children}</Body>
         </Html>
