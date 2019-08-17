@@ -3,11 +3,10 @@ import styled from 'styled-components';
 const CForm=styled.div `
     grid-column:2/12;
     grid-row:3/4;
-    width:500px;
+    width:300px;
     max-width:100%;
     .thanks{}
     .Form{
-        text-align:center;
         input{display:block;
             width:100%;
             padding:2px};
