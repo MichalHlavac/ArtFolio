@@ -1,35 +1,10 @@
 import React from 'react';
-import styled from 'styled-components';
+import { About } from '../components/styledAbout';
 
-const OMe=styled.div `
-display:grid;
-grid-template-columns:repeat(12,8.333vw);
-grid-auto-rows:minmax(1vw,auto);
-.head{
-    grid-column:2/12;
-    grid-row:1/2;
-    img{width:450px;
-        max-width:100%;
-        float:left;}
-};
-.about{
-    grid-column:2/12;
-    grid-row:2/3;
-};
-.offer{
-    grid-column:2/12;
-    grid-row:3/4;
-};
-.quote{
-    grid-column:2/12;
-    grid-row:4/5;
-    font-style:italic;
-};
-`
 export default () =>(
-    <OMe>
+    <About>
+        <img className="portrait" src="/IMG/profileImg.jpg" alt="Martina Fischmeister"/>
         <span className="head">
-            <img src="/IMG/profileImg.jpg" alt="Martina Fischmeister"/>
             <h1>Martina Fischmeister *1995</h1>
             <p>Česká ilustrátorka a malířka, žijící v Praze.</p>
         </span>
@@ -59,6 +34,5 @@ export default () =>(
             -Toybox
             </p>
         </span>
-        
-    </OMe>
+    </About>
     )
