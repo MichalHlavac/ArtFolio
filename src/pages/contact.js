@@ -27,6 +27,7 @@ grid-auto-rows:minmax(1vw,auto);
 .CForm{
     grid-column:2/12;
     grid-row:3/4;
+    display:inline;
 }
 `
 
