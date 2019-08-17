@@ -23,15 +23,17 @@ const CForm=styled.div `
             border-width:1px;
             };
         button{
-            background:url(/icons/send.svg);
+            background-color:transparent;
 	        -moz-border-radius:24px;
 	        -webkit-border-radius:24px;
 	        border-radius:24px;
 	        border:3px solid #000000;
 	        display:inline-block;
+	        color:#000000;
+	        font-family:Arial;
+	        font-size:17px;
+	        font-weight:bold;
 	        padding:11px 24px;
-            width:35px;
-            height:auto;
             margin:auto;
 	        };
     }
