@@ -57,7 +57,7 @@ export default function PortNav(props){
         <Box className='index' key={article.id}>
             <Link to={`/${lang}portfolio/${article.id}`}>
                 <Overlay>
-                    <h1>{article.name}</h1>
+                    <h2>{article.name}</h2>
                 </Overlay>
                 <PortImg src={article.image} alt={article.name} />
             </Link>
