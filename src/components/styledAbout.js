@@ -31,7 +31,7 @@ grid-auto-rows:minmax(1vw,auto);
 @media only screen and (min-width:900px) {
     .portrait{
     grid-column:2/6;
-    grid-row:1/3;
+    grid-row:1/4;
     }
 .head{
     grid-column:7/12;
@@ -43,11 +43,11 @@ grid-auto-rows:minmax(1vw,auto);
 };
 .offer{
     grid-column:2/12;
-    grid-row:3/4;
+    grid-row:4/5;
 };
 .quote{
     grid-column:2/12;
-    grid-row:4/5;
+    grid-row:5/6;
     font-style:italic;
 };
     
