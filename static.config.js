@@ -50,9 +50,8 @@ export default {
             <meta charSet="UTF-8"/>
             <title>Martina Fischmeister portfolio</title>
             <meta name="viewport" content="width=device-width, initial-scale=1" />
-            <meta name="description" content="Česká ilustrátorka a malířka, žijící v Praze.
-              Mohu pro Vás ilustrovat knihy, články, weby, plakáty, zpracovat svatební oznámení,
-               návrh na tetování nebo vyhotovit portrét. Projektům se meze nekladou!" />
+            <meta name="description" content="Mohu pro Vás ilustrovat knihy, články, weby, plakáty,
+             zpracovat svatební oznámení, návrh na tetování nebo vyhotovit portrét. Projektům se meze nekladou!" />
             <meta name="author" content="Michal Hlaváč" />
             <meta name="keywords" content="Martina Fischmeister,ilustration,Fischmaister ilustration" />
             <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-logo-16.png" />
