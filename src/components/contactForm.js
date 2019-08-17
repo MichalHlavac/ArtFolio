@@ -11,14 +11,13 @@ export default ()=> {
     const [submitted,setSubmitted]=useState(false)
     const [email,setEmail]=useState('');
     const [message,setMessage]=useState('');
-    const handleSubmit = async values => {
-        try {
-            await axios.post('/', encode({ 'form-name': 'contact', ...values }), {
+    const handleSubmit = event => {
+        event.preventDefault();
+        const Mail = [email,message];
+                axios.post('/', encode({ 'form-name': 'contact',...Mail }), {
                 headers: { 'Content-Type': 'application/x-www-form-urlencoded' },})
-                setSubmitted(true)}
-            catch (err) {
-              window.alert('There was a problem submitting your form! Try again or reload the page')
-              setSubmitted(true)}};
+                .then(setSubmitted(true))
+    }
     return (
         <div className="CForm">
             {submitted ? 
