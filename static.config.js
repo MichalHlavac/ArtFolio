@@ -50,7 +50,7 @@ export default {
             <title>Martina Fischmeister</title>
             <meta charSet="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
-            <meta name="description" content="Česká ilustrátorka a malířka, žijící v Praze." />
+            <meta name="description" content="Česká ilustrátorka a malířka, žijící v Praze" />
             <meta name="author" content="Michal Hlaváč" />
             <meta name="keywords" content="Martina Fischmeister,ilustration" />
             <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-logo-16.png" />
