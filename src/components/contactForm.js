@@ -1,22 +1,26 @@
 import React,{useState} from 'react';
 import axios from 'axios';
+import { encode } from './encode';
 
-const encode = data =>
-  
-    data.map(key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
-    .join('&');
-
+function encode(data) {
+    return Object.keys(data)
+      .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+      .join('&')
+  }
 
 export default ()=> {
+    const [state, setState]=useState({})
     const [submitted,setSubmitted]=useState(false)
-    const [email,setEmail]=useState('');
-    const [message,setMessage]=useState('');
-    const Mail = {"email":email,"message":message};
+    const handleChange = (e) => {setState({ ...state, [e.target.name]: e.target.value })}
     const handleSubmit = event => {
         event.preventDefault();
-                axios.post('/', encode({Mail}), {
+        const form = event.target
+                axios.post('/', encode({
+                    'form-name': form.getAttribute('name'),
+                    ...state,
+                  }), {
                 headers: { 'Content-Type': 'application/x-www-form-urlencoded' }})
-                .then(setSubmitted(true))
+                .then(res=>{setSubmitted(true)});
     }
     return (
         <div className="CForm">
@@ -28,15 +32,17 @@ export default ()=> {
                     </p>
                 ):(
                     <form
-                      name="contact"
-                      netlify="true"
-                      netlify-honeypot="bot-field"
-                      onSubmit={handleSubmit}>
+                        name="contact"
+                        method="post"
+                        data-netlify="true"
+                        data-netlify-honeypot="bot-field"
+                        onSubmit={handleSubmit}
+                    >
                         <div style={{height: 0,overflow: 'hidden',}}>
-                        <input name="bot-field" />
+                        <input name="bot-field"  onChange={handleChange}/>
                         </div>
-                        <input type="email" value={email} onChange={e=>setEmail(e.target.value)} placeholder="email"/>
-                        <textarea type="text" value={message} onChange={e=>setMessage(e.target.value)} placeholder="zprava"/>
+                        <input type="email" name="email" onChange={handleChange} placeholder="email"/>
+                        <textarea type="text" name="message" onChange={handleChange} placeholder="zprava"/>
                         <button type="submit">send</button>
                     </form>
                 )
