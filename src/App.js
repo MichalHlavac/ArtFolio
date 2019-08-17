@@ -7,7 +7,9 @@ import {LangProvider} from './LangContext';
 
 const GlobalStyle = createGlobalStyle`
   body {
-    font-size:95%;
+    h1{font-size:25px;}
+    h2{font-size:20px;}
+    p{font-size:16px}
     font-family:Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
