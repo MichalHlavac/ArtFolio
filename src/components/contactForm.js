@@ -2,8 +2,8 @@ import React,{useState} from 'react';
 import axios from 'axios';
 
 const encode = data =>
-  Object.keys(data)
-    .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
+  
+    data.map(key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
     .join('&');
 
 
@@ -14,7 +14,7 @@ export default ()=> {
     const Mail = {"email":email,"message":message};
     const handleSubmit = event => {
         event.preventDefault();
-                axios.post('/', encode({"form-name": "contact",...Mail }), {
+                axios.post('/', encode({Mail}), {
                 headers: { 'Content-Type': 'application/x-www-form-urlencoded' }})
                 .then(setSubmitted(true))
     }
