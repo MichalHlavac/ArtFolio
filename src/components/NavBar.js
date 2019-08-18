@@ -17,14 +17,14 @@ const NavBar = styled.nav`
   width:100%;
   background-color: #ffff;
   padding-bottom:10px;
-  padding-top: 10px;      
+  padding-top: 10px;     
   display:grid;
   grid-template-columns:repeat(12,8.333vw);
   grid-auto-rows:minmax(1vw,auto); 
   .LangNav{
     grid-column:11/13;
     grid-row:1/2;
-    margin:auto;
+    margin:auto 0 auto auto;
     padding-right:10px;
   }
   .Logo{
