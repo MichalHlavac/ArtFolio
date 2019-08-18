@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const CForm=styled.div `
     grid-column:2/12;
-    grid-row:3/4;
+    grid-row:2/3;
     width:300px;
     max-width:100%;
     padding:15px;
