@@ -15,14 +15,16 @@ grid-auto-rows:minmax(1vw,auto);
     }
     };
 .more{
+    text-align:center;
+    margin:auto;
     position: fixed;
     bottom:0;
     background-color:black;
     color:white;
-    a{
+    a{  color:white;
         font-weight:bold;
         margin:5px 0;
-        display:block;
+        display:inline;
     }
 };
 `
