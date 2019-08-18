@@ -15,9 +15,10 @@ grid-auto-rows:minmax(1vw,auto);
     }
     };
 .more{
-    grid-column:2/12;
-    grid-row:2/3;
-    display:block;
+    position: fixed;
+    bottom:0;
+    background-color:black;
+    color:white;
     a{
         font-weight:bold;
         margin:5px 0;
