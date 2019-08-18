@@ -7,19 +7,47 @@ display:grid;
 margin-bottom:150px;
 grid-template-columns:repeat(12,8.333vw);
 grid-auto-rows:minmax(1vw,auto);
-.contact{
+@media only screen and (min-width:900px) {
+    margin-top:200px;
+    .CForm{
+    margin:auto 0 auto auto;
+    grid-column:2/6;
+    grid-row:1/2;
+    }
+    .basic{
+        p{font-size:20px;}
+    margin:auto auto auto 30px;
+    grid-column:7/12;
+    grid-row:1/2;
+        a{
+        font-size:20px;
+        margin:15px 0;
+        display:block;
+        font-weight:bold;
+        }
+    }
+}
+@media only screen and (max-width:900px) {
+.CForm{
+    margin:auto;
+    grid-column:2/12;
+    grid-row:1/2;
+}
+.basic{
+    p{font-size:18px;}
+    margin:auto;
     grid-column:2/12;
     grid-row:2/3;
     a{
-        margin:5px 0;
+        margin:15px 0;
         display:block;
+        font-weight:bold;
+        font-size:18px;
+        }
     }
 }
-.basic{
-    grid-column:2/12;
-    grid-row:3/4;
-    };
 .more{
+    border-top:1px solid black;
     background-color:white;
     max-width:100%;
     width:100%;
@@ -29,15 +57,17 @@ grid-auto-rows:minmax(1vw,auto);
     bottom:0;
     p{
         display:inline-block;
-        font-size:20px;
+        font-size:18px;
         margin:16px;
     }
-    div{display:inline-block;}
-    a{ 
+    .link{display:inline-block;
+        a{ 
         font-weight:bold;
         margin:10px;
         display:inline;
+        }
     }
+    
 };
 `
 
@@ -57,14 +87,12 @@ export default () =>(
             <p>Volutová 2521/18<br/> 158 00<br/> Praha 5 - Stodůlky</p>
             <p>IČ: 07798164</p>
             <p>Fyzická osoba zapsaná<br/> v Živnostenském rejstříku od <br/>15.01.2019</p>
-        </div>
-        <div className="contact">
             <a href="mailto:fischmeister.art%40gmail.com">fischmeister.art&#064;gmail.com</a>
-            <a href="tel:+420 607 028 769">tel.+420 607 028 769</a>
+            <a href="tel:+420 607 028 769">+420 607 028 769</a>
         </div>
         <div className="more">
             <Message/>
-            <div>
+            <div className="link">
             <a href="https://www.facebook.com/martinafischmeister/" target="_blank">Facebook</a>
             {"|"}
             <a href="https://www.instagram.com/fischmeisterr/" target="_blank"> Instagram </a>

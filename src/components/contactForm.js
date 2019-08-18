@@ -42,9 +42,9 @@ export default ()=> {
                         <div style={{height: 0,overflow: 'hidden',}}>
                             <input name="bot-field"  onChange={handleChange}/>
                         </div>
-                        <input type="email" name="email" onChange={handleChange} placeholder="email" required/>
-                        <textarea maxLength="500" type="text" name="message" onChange={handleChange} placeholder="zprava" required/>
-                        <button type="submit">odeslat</button>
+                        <input type="email" name="email" onChange={handleChange} placeholder="e-mail" required/>
+                        <textarea maxLength="500" type="text" name="message" onChange={handleChange} placeholder="..." required/>
+                        <input className="button" type="image" name="submit" src="/icons/send.svg"/>
                     </form>
                 )
             }
