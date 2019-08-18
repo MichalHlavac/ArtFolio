@@ -4,6 +4,7 @@ const About=styled.div `
 display:grid;
 grid-template-columns:repeat(12,8.333vw);
 grid-auto-rows:minmax(1vw,auto);
+@media only screen and (max-width:900px){
 .portrait{
     grid-column:2/12;
     grid-row:1/2;
@@ -28,6 +29,7 @@ grid-auto-rows:minmax(1vw,auto);
     grid-row:5/6;
     font-style:italic;
 };
+}
 @media only screen and (min-width:900px) and (max-width:1500px) {
     .portrait{
     grid-column:7/12;
