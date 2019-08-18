@@ -4,11 +4,11 @@ import styled from 'styled-components';
 import Form from '../components/contactForm';
 const Contact=styled.div `
 display:grid;
-margin-bottom:150px;
+margin-bottom:110px;
 grid-template-columns:repeat(12,8.333vw);
 grid-auto-rows:minmax(1vw,auto);
 @media only screen and (min-width:900px) {
-    margin-top:200px;
+    margin-top:150px;
     .CForm{
     margin:auto 0 auto auto;
     grid-column:2/6;
