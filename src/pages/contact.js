@@ -15,8 +15,9 @@ grid-auto-rows:minmax(1vw,auto);
     }
     };
 .more{
+    grid-column:1/13;
     text-align:center;
-    margin:auto;
+    padding:auto;
     position: fixed;
     bottom:0;
     background-color:black;
