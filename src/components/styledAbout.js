@@ -28,7 +28,7 @@ grid-auto-rows:minmax(1vw,auto);
     grid-row:5/6;
     font-style:italic;
 };
-@media only screen and (min-width:900px) and (max-width:1500px) {
+@media only screen and (min-width:900px) {
     .portrait{
     grid-column:7/12;
     grid-row:1/4;
