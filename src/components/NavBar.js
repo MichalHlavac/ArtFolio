@@ -24,7 +24,7 @@ const NavBar = styled.nav`
   .LangNav{
     grid-column:11/13;
     grid-row:1/2;
-    margin:auto 0 auto auto;
+    margin:auto 10px auto auto;
     padding-right:10px;
   }
   .Logo{
