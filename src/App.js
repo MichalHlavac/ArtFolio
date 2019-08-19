@@ -4,6 +4,7 @@ import styled, {createGlobalStyle} from 'styled-components';
 import BurgerNav from './components/BurgerNav'
 import NavBar from './components/NavBar';
 import {LangProvider} from './LangContext';
+import {NavProvider} from './NavContext';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -37,8 +38,10 @@ function App() {
           <React.Suspense fallback={<em>Loading...</em>}>
             <GlobalStyle/>
             <LangProvider>
+              <NavProvider>
             <BurgerNav/>
             <NavBar/>
+              </NavProvider>
             <Body>
               <Routes path="*"/>
             </Body>

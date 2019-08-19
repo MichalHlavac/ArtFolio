@@ -24,7 +24,7 @@ const CForm=styled.div `
             resize: none;
             width:264px;
             max-width:100%;
-            height:150px;
+            height:200px;
             padding:2px;
             border:1px solid black;
             margin-bottom:5px;

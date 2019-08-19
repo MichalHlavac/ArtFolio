@@ -30,7 +30,7 @@ grid-auto-rows:minmax(1vw,auto);
 @media only screen and (max-width:900px) {
 .CForm{
     margin:auto;
-    grid-column:2/12;
+    grid-column:1/13;
     grid-row:1/2;
 }
 .basic{

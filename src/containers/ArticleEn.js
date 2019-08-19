@@ -1,9 +1,9 @@
 import React from 'react';
 import { withRouteData } from 'react-static';
 import styled from 'styled-components';
-
 import PortNav from 'components/PortNav';
 import Content from 'components/Content';
+import Inprnt from '../components/inprnt';
 
 const Article=styled.div`
 margin-left:auto;
@@ -17,6 +17,7 @@ export default withRouteData(({ article, articlesEn}) => (
                 <Article>
                     <Content content = {article}/>
                     <PortNav articles= {articlesEn} lang='en/'/>
+                    <Inprnt/>
                 </Article>
       
   

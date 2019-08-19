@@ -1,9 +1,10 @@
-import React,{useState} from 'react';
+import React,{useContext} from 'react';
 import styled from 'styled-components';
 import LangNav from '../components/LangNav'
 import Navigate from '../components/Navigate';
 import Social from '../components/SocialNW';
 import Logo from '../components/Logo';
+import {NavContext} from '../NavContext';
 
 const Nav = styled.nav`
     @media only screen and (min-height:450px)  and (orientation:landscape){
@@ -48,9 +49,9 @@ const Img=styled.img `
     margin:auto;
 `
  export default function BNav() {
-    const [click, setClick] =useState(false);
+    const [click, setClick] =useContext(NavContext);
     const close=()=>setClick(false);
-    const open=()=>setClick(true);
+    const open=() =>setClick(true);
         if (click){
             return (
                 <Nav>

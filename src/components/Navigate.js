@@ -2,6 +2,7 @@ import React,{useContext} from 'react'
 import {Link} from '@reach/router'
 import styled from 'styled-components'
 import {LangContext} from '../LangContext';
+import {NavContext} from '../NavContext';
 
 const SLink=styled(Link) `
   @media only screen and (min-height:450px)  and (orientation:landscape){
@@ -21,17 +22,19 @@ const SLink=styled(Link) `
 `
 export default function (){
     const [lang,setLang] = useContext(LangContext);
+    const [click, setClick] =useContext(NavContext);
+    const close=()=>setClick(false);
     switch(lang){
       case 'en':
         return(
-          <div className="Navigate">
+          <div className="Navigate"  onClick={close}>
             <SLink to='/en'>Portfolio</SLink>
             <SLink to='/en/about-me'>About Me</SLink>
             <SLink to='/contact'>Contact</SLink>
           </div>);
       case 'cz' :
         return(
-          <div className="Navigate">
+          <div className="Navigate"  onClick={close}>
             <SLink to='/'>Portfolio</SLink>
             <SLink to='/o-me'>O Mě</SLink>
             <SLink to='/contact'>Kontakt</SLink>
