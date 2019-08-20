@@ -23,6 +23,7 @@ const Item=styled.div `
             overflow:hidden;
 `
 const Description=styled.div `
+display:block;
 margin:auto;
 text-align:center;
 width:900px;
