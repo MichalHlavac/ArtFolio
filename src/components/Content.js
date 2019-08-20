@@ -23,7 +23,6 @@ const Item=styled.div `
             overflow:hidden;
 `
 const Description=styled.div `
-display:block;
 margin:auto;
 text-align:center;
 width:900px;
@@ -35,16 +34,18 @@ export default function Content(props){
 const content = props.content;
 
 return(
-        <Contt>
+        <div>
           <Description>
           <h1>{content.name}</h1>
           <p>{content.description}</p>
           </Description>  
+          <Contt>
           {content.resources.map(resource =>(
             <Item className='index' key={resource.name}>
               <Img  src={resource.image} alt={resource.name}/>
             </Item>))}             
-        </Contt>
+          </Contt>
+          </div>
     )
 
 };
