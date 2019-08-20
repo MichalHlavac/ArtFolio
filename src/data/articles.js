@@ -1,40 +1,76 @@
 const articles = [
   {
-    name: 'Právo newspaper',
-    image:'/IMG/pravoNewspaper/pravo.jpg',
-    id: 'pravo',
-    description: '',
+    name:'Revoluce',
+    image:'/IMG/revoluce/revoluce1.jpg',
+    id:'revoluce',
+    description:'Obálka a ukázka ilustrace knihy Revoluce, Jakub Trpiš. Kniha vyjde v lednu 2020, s celkem 12ti ilustracemi ode mě.',
     resources:[
-      { 
-        name:'Pravo1',
-        image:'/IMG/pravoNewspaper/pravo_1.jpg',
-        description: '',
-      },
-      { 
-        name:'Pravo2',
-        image:'/IMG/pravoNewspaper/pravo_2.jpg',
-        description: '',
-      },
-      { 
-        name:'Pravo3',
-        image:'/IMG/pravoNewspaper/pravo_3.jpg',
-        description: '',
-      },
-      { 
-        name:'Pravo4',
-        image:'/IMG/pravoNewspaper/pravo_4.jpg',
-        description: '',
-      },
-      { 
-        name:'Pravo5',
-        image:'/IMG/pravoNewspaper/pravo_5.jpg',
-        description: '',
-      },
-      { 
-        name:'Pravo6',
-        image:'/IMG/pravoNewspaper/pravo_6.jpg',
-        description: '',
-      },
+    {
+      name:'revoluce2',
+      image:'/IMG/revoluce/revoluce2.jpg',
+    },
+    {
+    name:'revoluce3',
+    image:'/IMG/revoluce/revoluce3.jpg',
+    },
+    ]
+  },
+
+  {
+    name:'Domy',
+    image:'/IMG/houses/house1.jpg',
+    id:'domy',
+    description:'S tímto menším projektem jsem se chtěla vrátit k tématu, kterému jsem se věnovala na vysoké, a to krajiny uvnitř jiných míst a věcí. Chtěla jsem pracovat s atmosférou každého domu, soustředit se na tvary a barvy.',
+    resources:[
+      {
+        name:'dum1',
+        image:'/IMG/houses/house1.jpg'
+    },
+    {
+      name:'dum2',
+      image:'/IMG/houses/house2.jpg'
+    },
+    {
+    name:'dum3',
+    image:'/IMG/houses/house3.jpg'
+    },
+    ]
+  },
+
+  {
+    name:'Dream week',
+    image:'/IMG/dreamWeek/dream week.jpg',
+    id:'dream-week',
+    description:'Dream Week ilustrace se zaměřují na to, co se nám děje ve snech, koho můžeme potkat a jaké transcendentální zkušenosti můžeme zažít.',
+    resources:[
+      {
+        name:'Dream week1',
+        image:'/IMG/dreamWeek/dream week1.jpg'
+    },
+    {
+      name:'Dream week2',
+        image:'/IMG/dreamWeek/dream week2.jpg'
+    },
+    {
+      name:'Dream week3',
+      image:'/IMG/dreamWeek/dream week3.jpg'
+    },
+    {
+      name:'Dream week4',
+      image:'/IMG/dreamWeek/dream week4.jpg'
+    },
+    {
+      name:'Dream week5',
+      image:'/IMG/dreamWeek/dream week5.jpg'
+    },
+    {
+      name:'Dream week6',
+      image:'/IMG/dreamWeek/dream week6.jpg'
+    },
+    {
+      name:'Dream week7',
+      image:'/IMG/dreamWeek/dream week7.jpg'
+    },
     ]
   },
   {
@@ -81,98 +117,61 @@ const articles = [
       },
     ],  
   },  
-   
+
   {
-    name: 'Personal work',
-    image:'/IMG/personal_work/personal_work.jpg',
-    id: 'personal-work',
-    description: '',
-    
-    resources: [
+    name: 'Různé projekty',
+    image:'/IMG/various/various2.jpg',
+    id: 'ruzne',
+    description: 'Kolekce projektů z let 2018 a 2019.',
+    resources:[
       { 
-        name:'Personal work 1',
-        image:'/IMG/personal_work/personal work_1.jpg',
-        description: '',
+        name:'Ruzne1',
+        image:'/IMG/various/various1.jpg',
       },
       { 
-        name:'Personal work 2',
-        image:'/IMG/personal_work/personal work_2.jpg',
-        description: '',
+        name:'Ruzne2',
+        image:'/IMG/various/various2.jpg',
       },
       { 
-        name:'Personal work 3',
-        image:'/IMG/personal_work/personal work_3.jpg',
-        description: '',
+        name:'Ruzne3',
+        image:'/IMG/various/various3.jpg',
       },
       { 
-        name:'Personal work 4',
-        image:'/IMG/personal_work/personal work_4.jpg',
-        description: '',
+        name:'Ruzne4',
+        image:'/IMG/various/various4.jpg',
       },
       { 
-        name:'Personal work 5',
-        image:'/IMG/personal_work/personal work_5.jpg',
-        description: '',
+        name:'Ruzne5',
+        image:'/IMG/various/various5.jpg',
       },
       { 
-        name:'Personal work 6',
-        image:'/IMG/personal_work/personal work_6.jpg',
-        description: '',
+        name:'Ruzne6',
+        image:'/IMG/various/various6.jpg',
       },
       { 
-        name:'Personal work 7',
-        image:'/IMG/personal_work/personal work_7.jpg',
-        description: '',
+        name:'Ruzne7',
+        image:'/IMG/various/various7.jpg',
       },
       { 
-        name:'Personal work 8',
-        image:'/IMG/personal_work/personal work_8.jpg',
-        description: '',
+        name:'Ruzne8',
+        image:'/IMG/various/various8.jpg',
       },
       { 
-        name:'Personal work 9',
-        image:'/IMG/personal_work/personal work_9.jpg',
-        description: '',
+        name:'Ruzne9',
+        image:'/IMG/various/various9.jpg',
       },
       { 
-        name:'Personal work 10',
-        image:'/IMG/personal_work/personal work_10.jpg',
-        description: '',
+        name:'Ruzne10',
+        image:'/IMG/various/various10.jpg',
       },
-      { 
-        name:'Personal work 11',
-        image:'/IMG/personal_work/personal work_11.jpg',
-        description: '',
-      },
-      { 
-        name:'Personal work 12',
-        image:'/IMG/personal_work/personal work_12.jpg',
-        description: '',
-      },
-      { 
-        name:'Personal work 13',
-        image:'/IMG/personal_work/personal work_13.jpg',
-        description: '',
-      },
-      { 
-        name:'Personal work 14',
-        image:'/IMG/personal_work/personal work_14.jpg',
-        description: '',
-      },
-      { 
-        name:'Personal work 15',
-        image:'/IMG/personal_work/personal work_15.jpg',
-        description: '',
-      },
-     
-    ],  
-  },  
- 
+    ]
+  },
+
   {
     name: 'Volba',
     image:'/IMG/volba/volba.jpg',
     id: 'volba',
-    description: '',
+    description: 'Obálka knihy Volba od Jakuba Trpiše.',
     
     resources: [
       { 
@@ -182,7 +181,39 @@ const articles = [
       },
     ],  
   },  
- 
-  ];
+
+  {
+    name: 'Právo editorial ilustrace',
+    image:'/IMG/pravoNewspaper/pravo.jpg',
+    id: 'pravo',
+    description: 'Ilustrace pro Právo jsem začala dělat v roce 2017 a to pokračuje do současnosti. Tohle je výběr editorial ilustrací, které jsem pro ně vytvořila. Později byly publikovány nakladatelstvím Novela Bohemica.',
+    resources:[
+      { 
+        name:'Pravo1',
+        image:'/IMG/pravoNewspaper/pravo_1.jpg',
+      },
+      { 
+        name:'Pravo2',
+        image:'/IMG/pravoNewspaper/pravo_2.jpg',
+      },
+      { 
+        name:'Pravo3',
+        image:'/IMG/pravoNewspaper/pravo_3.jpg',
+      },
+      { 
+        name:'Pravo4',
+        image:'/IMG/pravoNewspaper/pravo_4.jpg',
+      },
+      { 
+        name:'Pravo5',
+        image:'/IMG/pravoNewspaper/pravo_5.jpg',
+      },
+      { 
+        name:'Pravo6',
+        image:'/IMG/pravoNewspaper/pravo_6.jpg',
+      },
+    ]
+  },
+];
 
   export default articles

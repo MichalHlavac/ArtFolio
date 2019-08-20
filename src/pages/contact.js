@@ -2,6 +2,7 @@ import React,{useContext} from 'react';
 import {LangContext} from '../LangContext';
 import styled from 'styled-components';
 import Form from '../components/contactForm';
+import Inprnt from '../components/inprnt';
 const Contact=styled.div `
 display:grid;
 margin-bottom:110px;
@@ -9,41 +10,72 @@ grid-template-columns:repeat(12,8.333vw);
 grid-auto-rows:minmax(1vw,auto);
 @media only screen and (min-width:900px) {
     margin-top:150px;
-    .CForm{
-    margin:auto 0 auto auto;
-    grid-column:2/6;
-    grid-row:1/2;
-    }
-    .basic{
-        p{font-size:20px;}
-    margin:auto auto auto 30px;
-    grid-column:7/12;
-    grid-row:1/2;
-        a{
-        font-size:20px;
-        margin:15px 0;
-        display:block;
-        font-weight:bold;
-        }
-    }
-}
-@media only screen and (max-width:900px) {
-.CForm{
-    margin:auto;
-    grid-column:1/13;
-    grid-row:1/2;
-}
-.basic{
-    p{font-size:18px;}
+    .inprnt{
     margin:auto;
     grid-column:2/12;
+    grid-row:1/2;
+    text-align:center;
+    a{
+        font-size:18px;
+    }
+}
+.main{
+    grid-column:2/12;
     grid-row:2/3;
+    margin:auto;
+    text-align:center;
     a{
         margin:15px 0;
         display:block;
         font-weight:bold;
         font-size:18px;
         }
+
+}
+    .CForm{
+    margin:auto 0 auto auto;
+    grid-column:2/6;
+    grid-row:3/4;
+    }
+    .basic{
+        p{font-size:16px;}
+    margin:auto auto auto 30px;
+    grid-column:7/12;
+    grid-row:3/4;
+    }
+}
+@media only screen and (max-width:900px) {
+.inprnt{
+    margin:auto;
+    grid-column:2/12;
+    grid-row:1/2;
+    text-align:center;
+    a{
+        font-size:18px;
+    }
+}
+.main{
+    grid-column:2/12;
+    grid-row:2/3;
+    margin:auto;
+    a{
+        margin:15px 0;
+        display:block;
+        font-weight:bold;
+        font-size:18px;
+        }
+
+}
+.CForm{
+    margin:auto;
+    grid-column:1/13;
+    grid-row:3/4;
+}
+.basic{
+    p{font-size:18px;}
+    margin:auto;
+    grid-column:2/12;
+    grid-row:4/5;
     }
 }
 .more{
@@ -82,13 +114,17 @@ const Message = ()=>{
 
 export default () =>(
     <Contact>
+        <Inprnt/>
+        <div className="main">
+            <a href="mailto:fischmeister.art%40gmail.com">fischmeister.art&#064;gmail.com</a>
+            <a href="tel:+420 607 028 769">+420 607 028 769</a>
+        </div>
+        <Form/>
         <div className="basic">
             <p>Martina Světlíková</p>
             <p>Volutová 2521/18<br/> 158 00<br/> Praha 5 - Stodůlky</p>
             <p>IČ: 07798164</p>
             <p>Fyzická osoba zapsaná<br/> v Živnostenském rejstříku od <br/>15.01.2019</p>
-            <a href="mailto:fischmeister.art%40gmail.com">fischmeister.art&#064;gmail.com</a>
-            <a href="tel:+420 607 028 769">+420 607 028 769</a>
         </div>
         <div className="more">
             <Message/>
@@ -100,6 +136,5 @@ export default () =>(
             <a href="https://www.behance.net/fischmeister" target="_blank">Behance</a>
             </div>
         </div>
-        <Form/>
     </Contact>
     );
