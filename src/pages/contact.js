@@ -16,8 +16,8 @@ const Contact=styled.div `
     @media only screen and (min-width:900px) {
         .inprnt{
             margin:auto;
-            grid-column:2/12;
-            grid-row:5/6;
+            grid-column:7/12;
+            grid-row:4/6;
             text-align:center;
             a{
                 font-size:1.5vw;
@@ -26,7 +26,7 @@ const Contact=styled.div `
         }
         .main{
             grid-column:7/12;
-            grid-row:2/3;
+            grid-row:2/4;
             margin:auto;
             a{
                 margin:15px 0;
@@ -39,7 +39,7 @@ const Contact=styled.div `
         .CForm{
             margin:auto 0 auto auto;
             grid-column:2/6;
-            grid-row:2/3;
+            grid-row:2/6;
         }
         .basic{
            display:none;
