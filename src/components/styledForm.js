@@ -8,6 +8,7 @@ const CForm=styled.div `
     
     .thanks{
         font-size:20px;
+        width:100%;
     }
     .Form{
         width:100%;
