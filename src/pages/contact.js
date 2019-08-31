@@ -14,7 +14,6 @@ const Contact=styled.div `
         font-size:35px;
     }
     @media only screen and (min-width:900px) {
-        margin-top:150px;
         .inprnt{
             margin:auto;
             grid-column:2/12;
