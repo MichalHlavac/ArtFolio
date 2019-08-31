@@ -28,12 +28,12 @@ const Contact=styled.div `
             grid-column:7/12;
             grid-row:2/3;
             margin:auto;
-            text-align:center;
             a{
                 margin:15px 0;
                 display:block;
                 font-weight:bold;
                 font-size:30px;
+                text-align:left;
             }
         }
         .CForm{
