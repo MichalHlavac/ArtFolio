@@ -16,17 +16,17 @@ const Contact=styled.div `
     @media only screen and (min-width:900px) {
         .inprnt{
             margin:auto;
-            grid-column:7/12;
-            grid-row:4/6;
+            grid-column:2/12;
+            grid-row:8/9;
             text-align:center;
             a{
-                font-size:1.5vw;
+                font-size:calc(1em + 1vw);
                 font-weight:bold;
             }
         }
         .main{
             grid-column:7/12;
-            grid-row:2/4;
+            grid-row:2/3;
             margin:auto;
             a{
                 margin:15px 0;
@@ -39,7 +39,7 @@ const Contact=styled.div `
         .CForm{
             margin:auto 0 auto auto;
             grid-column:2/6;
-            grid-row:2/6;
+            grid-row:2/3;
         }
         .basic{
            display:none;
