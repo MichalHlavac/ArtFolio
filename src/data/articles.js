@@ -77,7 +77,7 @@ const articles = [
     name: 'Divočina: Povídky pro Duhu',
     image:'/IMG/divocina/divocina.jpg',
     id: 'divocina',
-    description: 'Bylo mi ctí vytvářet ilustrace a přebal pro knihu Divočina: Povídky pro Duhu. Kniha obsahuje více než 20 ilustrací.Veškerý výtěžek jde do charitativní organizace Duha, která usiluje o obnovu lesů a divočiny v České republice. Projekt byl zahájen před 2 lety,když jsem měla za úkol ilustrovat povídky pro noviny Právo. Od té doby se příběhy hromadily a nakonec byly publikovány v knižní podobě nakladatelstvím Novela Bohemica. Takže s touto knihou můžete snad vidět moji cestu, jak jsem vyrůstala jako ilustrátorka ,od realistických renderů k jednodušší a uvolněnější formě.'
+    description: 'Bylo mi ctí vytvářet ilustrace a přebal pro knihu Divočina: Povídky pro Duhu. Kniha obsahuje více než 20 ilustrací.Veškerý výtěžek jde do charitativní organizace Duha, která usiluje o obnovu lesů a divočiny v České republice. Projekt byl zahájen před 2 lety,když jsem měla za úkol ilustrovat povídky pro noviny Právo. Od té doby se příběhy hromadily a nakonec byly publikovány v knižní podobě nakladatelstvím Novela Bohemica. Takže s touto knihou můžete snad vidět moji cestu, jak jsem vyrůstala jako ilustrátorka ,od realistických renderů k jednodušší a uvolněnější formě.',
     
     resources: [
       { 
