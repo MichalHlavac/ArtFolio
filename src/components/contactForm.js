@@ -1,6 +1,7 @@
-import React,{useState} from 'react';
+import React,{useState,useContext} from 'react';
 import axios from 'axios';
 import {CForm} from './styledForm';
+import {LangContext} from '../LangContext';
 
 function encode(data) {
     return Object.keys(data)
@@ -9,8 +10,12 @@ function encode(data) {
   }
 
 export default ()=> {
-    const [state, setState]=useState({})
-    const [submitted,setSubmitted]=useState(false)
+    const [state, setState]=useState({});
+    const [lang,setLang]=useContext(LangContext);
+    const [submitted,setSubmitted]=useState(false);
+    const thanks =()=>{
+        if(lang==='en'){return <p className="thanks">Thanks for your message.We'll be in contact with you as soon aspossible.</p>}
+        return <p className="thanks">Děkuji za vaši zprávu. Ozvu se vám hned jak to bude možné.</p>};
     const handleChange = (e) => {setState({ ...state, [e.target.name]: e.target.value })}
     const handleSubmit = event => {
         event.preventDefault();
@@ -25,11 +30,7 @@ export default ()=> {
     return (
         <CForm className="CForm">
             {submitted ? 
-                (
-                    <p className="thanks">
-                    Thanks for submitting your information! We'll be in contact with you as soon as
-                    possible.
-                    </p>
+                (thanks
                 ):(
                     <form
                         className="Form"

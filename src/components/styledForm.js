@@ -6,7 +6,10 @@ const CForm=styled.div `
     padding:15px;
     box-sizing:border-box;
     
-    .thanks{}
+    .thanks{
+        font-size:20px;
+        text-align:center;
+    }
     .Form{
         width:100%;
         text-align:center;
