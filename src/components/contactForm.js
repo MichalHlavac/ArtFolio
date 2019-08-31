@@ -12,7 +12,7 @@ function encode(data) {
 export default ()=> {
     const [state, setState]=useState({});
     const [lang,setLang]=useContext(LangContext);
-    const [submitted,setSubmitted]=useState(true);
+    const [submitted,setSubmitted]=useState(false);
     const handleChange = (e) => {setState({ ...state, [e.target.name]: e.target.value })}
     const handleSubmit = event => {
         event.preventDefault();
