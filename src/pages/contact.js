@@ -46,20 +46,24 @@ const Contact=styled.div `
         }
         .footer{
             .more{
-                grid-column:1/2;
+                grid-column:1/3;
                 grid-row:1/2;
                 margin:auto;
-                p{font-size:20px;}
+                p{font-size:20px;
+                display:inline;}
+                .link{display:inline;}
             }
             .basic{
                 margin:20px 0;  
                 display:block;
                 grid-row:1/2;
+                text-align:right;
+                margin-right:20px;
                 p{display:inline-block;
                 text-align:left;
                 font-size:12px;
                 margin:0 15px;}
-                grid-column:2/3;
+                grid-column:3/4;
 
             }
         }
@@ -101,7 +105,7 @@ const Contact=styled.div `
         }
         .footer{
             .more{ 
-                grid-column:1/3;
+                grid-column:1/4;
                 margin:0 10px;
                 
             }
@@ -123,7 +127,7 @@ const Contact=styled.div `
     position: fixed;
     bottom:0;
     display:grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 33% 33% 33%;
     grid-template-rows: auto;
 };
 `
