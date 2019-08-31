@@ -20,7 +20,7 @@ const Contact=styled.div `
             grid-row:5/6;
             text-align:center;
             a{
-                font-size:22px;
+                font-size:1.5vw;
                 font-weight:bold;
             }
         }
