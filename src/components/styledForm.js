@@ -7,8 +7,17 @@ const CForm=styled.div `
     box-sizing:border-box;
     
     .thanks{
-        font-size:20px;
         width:100%;
+        height:380px;
+        vertical-align:middle;
+        display:table-cell;
+        border:1px solid black;
+        p{
+            font-size:calc(1em + 1vw);
+            font-weight:bold;
+            text-align:center;
+            margin:0 15px;
+        }
     }
     .Form{
         width:100%;

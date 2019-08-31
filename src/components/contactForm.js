@@ -12,10 +12,7 @@ function encode(data) {
 export default ()=> {
     const [state, setState]=useState({});
     const [lang,setLang]=useContext(LangContext);
-    const [submitted,setSubmitted]=useState(false);
-    const thanks =()=>{
-        if(lang==='en'){return <p className="thanks">Thanks for your message.We'll be in contact with you as soon aspossible.</p>}
-        else {return (<p className="thanks">Děkuji za vaši zprávu. Ozvu se vám hned jak to bude možné.</p>)}};
+    const [submitted,setSubmitted]=useState(true);
     const handleChange = (e) => {setState({ ...state, [e.target.name]: e.target.value })}
     const handleSubmit = event => {
         event.preventDefault();
@@ -30,7 +27,10 @@ export default ()=> {
     return (
         <CForm className="CForm">
             {submitted ? 
-                (thanks
+                (<div className="thanks">
+                    {(lang==="en")?(<p>Thanks for your message.We'll be in contact with you as soon aspossible.</p>)
+                    :(<p>Děkuji za vaši zprávu. Ozvu se vám hned jak to bude možné.</p>)}
+                </div>
                 ):(
                     <form
                         className="Form"
