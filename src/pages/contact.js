@@ -2,7 +2,6 @@ import React,{useContext} from 'react';
 import {LangContext} from '../LangContext';
 import styled from 'styled-components';
 import Form from '../components/contactForm';
-import Inprnt from '../components/inprnt';
 const Contact=styled.div `
     display:grid;
     margin-bottom:110px;
@@ -129,46 +128,74 @@ const Contact=styled.div `
     grid-template-rows: auto;
 };
 `
-const Legal =()=>(
-<div className="basic">
-            <p>Martina Světlíková<br/>
-            Volutová 2521/18<br/> 158 00<br/> Praha 5 - Stodůlky</p>
-            <p>IČ: 07798164<br/>
-            Fyzická osoba zapsaná<br/> v Živnostenském rejstříku<br/> od 15.01.2019</p>
-        </div>
-);
-
-const Message = ()=>{
+export default()=>{
     const [lang,setLang]= useContext(LangContext);
-    switch(lang){
-        case 'en':
-            return(<p>You can find news and more of my art here:</p>);
-        case 'cz' :
-            return(<p>Novinky a další ukázky tvorby naleznete zde:</p>);
-        default:return null;}};
-
-export default () =>(
-    <Contact>
-        <h1>Kontaktujte mě</h1>
-        <Form/>
+    const Main =(
         <div className="main">
             <a href="mailto:fischmeister.art%40gmail.com">fischmeister.art&#064;gmail.com</a>
             <a href="tel:+420 607 028 769">+420 607 028 769</a>
         </div>
-        <Inprnt/>
-        <Legal/>
-        <div className="footer">
-            <div className="more">
-                <Message/>
-                <div className="link">
-                    <a href="https://www.facebook.com/martinafischmeister/" target="_blank">Facebook</a>
-                    {"|"}
-                    <a href="https://www.instagram.com/fischmeisterr/" target="_blank"> Instagram </a>
-                    {"|"}
-                    <a href="https://www.behance.net/fischmeister" target="_blank">Behance</a>
-                </div>
-            </div>
-            <Legal/>
-        </div>
-    </Contact>
     );
+    const Legal =(
+        <div className="basic">
+                    <p>Martina Světlíková<br/>
+                    Volutová 2521/18<br/> 158 00<br/> Praha 5 - Stodůlky</p>
+                    <p>IČ: 07798164<br/>
+                    Fyzická osoba zapsaná<br/> v Živnostenském rejstříku<br/> od 15.01.2019</p>
+                </div>
+        );
+    const Link =(
+        <div className="link">
+            <a href="https://www.facebook.com/martinafischmeister/" target="_blank">Facebook</a>
+            {"|"}
+            <a href="https://www.instagram.com/fischmeisterr/" target="_blank"> Instagram </a>
+            {"|"}
+            <a href="https://www.behance.net/fischmeister" target="_blank">Behance</a>
+        </div>
+        );
+    switch(lang){
+    case 'en':
+        return(
+            <Contact>
+                <h1>Contact Me</h1>
+                <Form/>
+                {Main}
+                <div className="inprnt">
+                    <a href="https://www.inprnt.com/gallery/fischmeister/" target="blank">
+                        You can purchase my prints at INPRNT.com
+                    </a>
+                </div>
+                {Legal}
+                <div className="footer">
+                    <div className="more">
+                        <p>You can find news and more of my art here:</p>
+                        {Link}
+                    </div>
+                    {Legal}
+                </div>
+            </Contact>
+        );
+    case 'cz' :
+        return(
+            <Contact>
+                <h1>Kontaktujte mě</h1>
+                <Form/>
+                {Main}
+                <div className="inprnt">
+                    <a href="https://www.inprnt.com/gallery/fischmeister/" target="blank">
+                        Mé tisky můžete zakoupit na INPRNT.com
+                    </a>
+                </div>
+                {Legal}
+                <div className="footer">
+                    <div className="more">
+                        <p>Novinky a další ukázky tvorby naleznete zde:</p>
+                        {Link}
+                    </div>
+                    {Legal}
+                </div>
+            </Contact>
+        );
+    default:return null;
+    }
+}
