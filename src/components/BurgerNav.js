@@ -10,7 +10,7 @@ import {NavContext} from '../NavContext';
 const fadeInAnimation = keyframes `${slideInDown}`;
 
 const OpenNav = styled.nav`
-    animation: 2s ${fadeInAnimation};
+    animation: 1s ${fadeInAnimation};
     @media only screen and (min-height:450px)  and (orientation:landscape){
         display:none;}
     @media only screen and (min-width:800px) and (orientation: portrait){
