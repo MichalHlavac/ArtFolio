@@ -14,6 +14,7 @@ text-align:center;
 export default withRouteData(({ article, articlesEn}) => (
             
                 <Article>
+                    {window.scrollTo(0,0)}
                     <Content content = {article}/>
                     <PortNav articles= {articlesEn} lang='en/'/>
                 </Article>
