@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import { withRouteData } from 'react-static';
 import styled from 'styled-components';
 import PortNav from 'components/PortNav';
@@ -12,13 +12,12 @@ text-align:center;
 
 
 export default withRouteData(({ article, articlesEn}) => {
-            
-
-            return(    <Article>
-                    {window.scrollTo(0,0)}
-                    <Content content = {article}/>
-                    <PortNav articles= {articlesEn} lang='en/'/>
-                </Article>)
-      
-  
+    useEffect(()=>{
+        window.scrollTo(0,0)
+    });
+    return(    
+        <Article>
+            <Content content = {article}/>
+            <PortNav articles= {articlesEn} lang='en/'/>
+        </Article>)
 });
