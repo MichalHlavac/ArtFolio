@@ -11,13 +11,14 @@ text-align:center;
 `
 
 
-export default withRouteData(({ article, articlesEn}) => (
+export default withRouteData(({ article, articlesEn}) => {
             
-                <Article>
+
+            return(    <Article>
                     {window.scrollTo(0,0)}
                     <Content content = {article}/>
                     <PortNav articles= {articlesEn} lang='en/'/>
-                </Article>
+                </Article>)
       
   
-));
+});
