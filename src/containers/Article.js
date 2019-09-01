@@ -14,7 +14,7 @@ text-align:center;
 export default withRouteData(({ article, articles}) => {
     useEffect(()=>{
         window.scrollTo(0,0);
-    },[article]);
+    },[article,articles]);
     return( 
         <Article>
             <Content content = {article}/>
