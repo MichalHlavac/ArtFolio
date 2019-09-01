@@ -1,16 +1,16 @@
 import React,{useContext} from 'react';
 import styled,{keyframes} from 'styled-components';
-import {slideInDown} from 'react-animations';
+import {slideInDown,fadeIn} from 'react-animations';
 import LangNav from '../components/LangNav'
 import Navigate from '../components/Navigate';
 import Social from '../components/SocialNW';
 import Logo from '../components/Logo';
 import {NavContext} from '../NavContext';
 
-const fadeInAnimation = keyframes `${slideInDown}`;
-
+const slideInAnimation = keyframes `${slideInDown}`;
+const fadeInAnimation = keyframes `${fadeIn}`;
 const OpenNav = styled.nav`
-    animation: 1s ${fadeInAnimation};
+    animation: 1s ${slideInAnimation};
     @media only screen and (min-height:450px)  and (orientation:landscape){
         display:none;}
     @media only screen and (min-width:800px) and (orientation: portrait){
@@ -42,6 +42,7 @@ const OpenNav = styled.nav`
   }   
 `
 const ClosedNav=styled.nav `
+animation: 1s ${fadeInAnimation};
  @media only screen and (min-height:450px)  and (orientation:landscape){
         display:none;}
     @media only screen and (min-width:800px) and (orientation: portrait){
