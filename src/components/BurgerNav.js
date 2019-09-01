@@ -1,6 +1,6 @@
 import React,{useContext} from 'react';
 import styled,{keyframes} from 'styled-components';
-import {slideInDown,fadeIn} from 'react-animations';
+import {slideInDown} from 'react-animations';
 import LangNav from '../components/LangNav'
 import Navigate from '../components/Navigate';
 import Social from '../components/SocialNW';
@@ -8,7 +8,6 @@ import Logo from '../components/Logo';
 import {NavContext} from '../NavContext';
 
 const slideInAnimation = keyframes `${slideInDown}`;
-const fadeInAnimation = keyframes `${fadeIn}`;
 const OpenNav = styled.nav`
     animation: 1s ${slideInAnimation};
     @media only screen and (min-height:450px)  and (orientation:landscape){
@@ -42,7 +41,6 @@ const OpenNav = styled.nav`
   }   
 `
 const ClosedNav=styled.nav `
-animation: 1s ${fadeInAnimation};
  @media only screen and (min-height:450px)  and (orientation:landscape){
         display:none;}
     @media only screen and (min-width:800px) and (orientation: portrait){
@@ -77,7 +75,7 @@ const Img=styled.img `
     const open=() =>setClick(true);
         if (click){
             return (
-                <OpenNav>
+                <OpenNav className={click}>
                     <Img src="/icons/close.svg" alt="close" onClick={close} />
                     <br/>
                     <LangNav/>
