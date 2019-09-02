@@ -13,7 +13,7 @@ const Contact=styled.div `
         text-align:center ;
         font-size:35px;
     }
-    @media only screen and (min-width:900px) {
+    @media only screen and (min-width:960px) {
         .inprnt{
             margin:auto;
             grid-column:2/12;
@@ -45,16 +45,15 @@ const Contact=styled.div `
            display:none;
         }
         .footer{
-            .more{
+            .link{
                 grid-column:1/3;
                 grid-row:1/2;
                 margin:auto;
-                p{font-size:20px;
-                display:inline;}
-                .link{display:inline;}
+                display:inline;
+                a{margin:0 30px}
             }
             .basic{
-                margin:20px 0;  
+                margin:15px 0;  
                 display:block;
                 grid-row:1/2;
                 text-align:right;
@@ -68,7 +67,7 @@ const Contact=styled.div `
             }
         }
     }
-    @media only screen and (max-width:900px) {
+    @media only screen and (max-width:960px) {
         .inprnt{
         margin:auto;
         grid-column:2/12;
@@ -104,9 +103,10 @@ const Contact=styled.div `
             grid-row:3/4;
         }
         .footer{
-            .more{ 
+            .link{ 
                 grid-column:1/4;
-                margin:0 10px;
+                margin:10px auto;
+                a{margin:0 10px}
                 
             }
             .basic{
@@ -116,7 +116,7 @@ const Contact=styled.div `
 .link{
     margin:16px;
     font-weight:bold;
-    a{margin:0 15px}
+   
     }
 .footer{
     border-top:1px solid black;
@@ -141,10 +141,8 @@ export default()=>{
     );
     const Legal =(
         <div className="basic">
-                    <p>Martina Světlíková<br/>
-                    Volutová 2521/18<br/> 158 00<br/> Praha 5 - Stodůlky</p>
-                    <p>IČ: 07798164<br/>
-                    Fyzická osoba zapsaná<br/> v Živnostenském rejstříku<br/> od 15.01.2019</p>
+                    <p>Martina Světlíková<br/>IČ: 07798164</p>
+                    <p>v Živnostenském rejstříku<br/> od 15.01.2019</p>
                 </div>
         );
     const Link =(
@@ -170,10 +168,7 @@ export default()=>{
                 </div>
                 {Legal}
                 <div className="footer">
-                    <div className="more">
-                        <p>You can find news and more of my art here:</p>
-                        {Link}
-                    </div>
+                    {Link}
                     {Legal}
                 </div>
             </Contact>
@@ -191,10 +186,7 @@ export default()=>{
                 </div>
                 {Legal}
                 <div className="footer">
-                    <div className="more">
-                        <p>Novinky a další ukázky tvorby naleznete zde:</p>
-                        {Link}
-                    </div>
+                    {Link}
                     {Legal}
                 </div>
             </Contact>
