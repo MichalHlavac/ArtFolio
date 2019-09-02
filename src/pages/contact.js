@@ -41,7 +41,7 @@ const Contact=styled.div `
             grid-column:2/6;
             grid-row:2/3;
         }
-        .basic{
+        .legal{
            display:none;
         }
         .footer{
@@ -52,7 +52,7 @@ const Contact=styled.div `
                 display:inline;
                 a{margin:0 30px}
             }
-            .basic{
+            .legal{
                 margin:15px 0;  
                 display:block;
                 grid-row:1/2;
@@ -78,8 +78,8 @@ const Contact=styled.div `
                 font-weight:bold;
             }
         }
-        .basic{
-            grid-column:2/12;
+        .legal{
+            grid-column:1/13;
             grid-row:6/7;
             text-align:center;
             p{text-align:left;}
@@ -109,7 +109,7 @@ const Contact=styled.div `
                 a{margin:0 10px}
                 
             }
-            .basic{
+            .legal{
                 display:none;}
         }
     }
@@ -140,9 +140,9 @@ export default()=>{
         </div>
     );
     const Legal =(
-        <div className="basic">
+        <div className="legal">
                     <p>Martina Světlíková<br/>IČ: 07798164</p>
-                    <p>v Živnostenském rejstříku<br/> od 15.01.2019</p>
+                    <p>V živnostenském rejstříku<br/> od 15.01.2019</p>
                 </div>
         );
     const Link =(
