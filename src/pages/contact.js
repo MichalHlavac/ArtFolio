@@ -7,39 +7,43 @@ const Contact=styled.div `
     margin-bottom:110px;
     grid-template-columns:repeat(12,8.333vw);
     grid-auto-rows:minmax(1vw,auto);
-    h1{
-        grid-column:2/12;
-        grid-row:1/2;
-        text-align:center ;
-        font-size:35px;
-    }
+    
     @media only screen and (min-width:960px) {
+        h1{
+        grid-column:2/6;
+        grid-row:1/2;
+        display:none;
+    }
         .inprnt{
-            margin:auto;
-            grid-column:2/12;
-            grid-row:8/9;
-            text-align:center;
+            margin-left:auto;
+            margin-right:auto;
+            grid-column:2/6;
+            grid-row:4/5;
+            
             a{
-                font-size:calc(1em + 1vw);
+                font-size:calc(0.5em + 1vw);
                 font-weight:bold;
+                text-align:center;
             }
         }
         .main{
-            grid-column:7/12;
+            grid-column:2/6;
             grid-row:2/3;
             margin:auto;
+            text-align:center ;
             a{
                 margin:15px 0;
                 display:block;
                 font-weight:bold;
-                font-size:30px;
-                text-align:left;
+                font-size:25px;
+                
             }
         }
         .CForm{
-            margin:auto 0 auto auto;
+            text-align:center;
+            margin:auto;
             grid-column:2/6;
-            grid-row:2/3;
+            grid-row:3/4;
         }
         .legal{
            display:none;
@@ -68,6 +72,11 @@ const Contact=styled.div `
         }
     }
     @media only screen and (max-width:960px) {
+        h1{
+        grid-column:2/12;
+        grid-row:1/2;
+        visibility: hidden;
+    }
         .inprnt{
         margin:auto;
         grid-column:2/12;
@@ -119,7 +128,6 @@ const Contact=styled.div `
    
     }
 .footer{
-    border-top:1px solid black;
     background-color:white;
     max-width:100%;
     width:100%;

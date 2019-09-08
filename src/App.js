@@ -8,6 +8,7 @@ import {NavProvider} from './NavContext';
 
 const GlobalStyle = createGlobalStyle`
   body {
+    background-color:whitesmoke;
     h1{font-size:25px;}
     h2{font-size:20px;}
     p{font-size:16px}

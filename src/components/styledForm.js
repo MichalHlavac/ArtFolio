@@ -22,7 +22,9 @@ const CForm=styled.div `
     .Form{
         width:100%;
         text-align:center;
+        
         input{display:block;
+            background-color:whitesmoke;
             font-size:16px;
             max-width:100%;
             width:564px;
@@ -32,6 +34,7 @@ const CForm=styled.div `
             margin-bottom:20px;
             };
         textarea{display:block;
+            background-color:whitesmoke;
             font-size:16px;
             resize: none;
             width:564px;

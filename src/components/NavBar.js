@@ -16,6 +16,7 @@ const NavBar = styled.nav`
   z-index:+2;
   width:100%;
   background-color: #ffff;
+  box-shadow: 0 2px 0 0 rgba(211,211,211,0.6);
   padding-bottom:10px;
   padding-top: 10px;     
   display:grid;
