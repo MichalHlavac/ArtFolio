@@ -9,6 +9,16 @@ const Contact=styled.div `
     grid-auto-rows:minmax(1vw,auto);
     
     @media only screen and (min-width:960px) {
+        .ilustration{
+            grid-column:8/12;
+            grid-row:2/5;
+            
+            img{
+                margin:auto;
+                width:auto;
+                max-height:900px;
+            }
+        }
         h1{
         grid-column:2/6;
         grid-row:1/2;
@@ -72,6 +82,9 @@ const Contact=styled.div `
         }
     }
     @media only screen and (max-width:960px) {
+        .ilustration{
+            display:none;
+        }
         h1{
         grid-column:2/12;
         grid-row:1/2;
@@ -147,6 +160,11 @@ export default()=>{
             <a href="tel:+420 607 028 769">+420 607 028 769</a>
         </div>
     );
+    const Ilustration =(
+        <figure className="ilustration">
+            <img src="/graphic/contactIlustration.png" alt=""/>
+        </figure>
+    );
     const Legal =(
         <div className="legal">
                     <p>Martina Světlíková<br/>IČ: 07798164</p>
@@ -167,6 +185,7 @@ export default()=>{
         return(
             <Contact>
                 <h1>Contact Me</h1>
+                {Ilustration}
                 <Form/>
                 {Main}
                 <div className="inprnt">
@@ -185,6 +204,7 @@ export default()=>{
         return(
             <Contact>
                 <h1>Kontaktujte mě</h1>
+                {Ilustration}
                 <Form/>
                 {Main}
                 <div className="inprnt">
