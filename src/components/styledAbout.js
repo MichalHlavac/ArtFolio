@@ -25,9 +25,14 @@ grid-auto-rows:minmax(1vw,auto);
 };
 .quote{
     grid-column:2/12;
-    grid-row:5/6;
+    grid-row:6/7;
     font-style:italic;
 };
+.awards{
+    grid-column:2/12;
+    grid-row:5/6;
+    img{max-width:150px;}
+}
 @media only screen and (min-width:900px) {
     .portrait{
     grid-column:7/12;
@@ -42,12 +47,22 @@ grid-auto-rows:minmax(1vw,auto);
     grid-row:2/3;
 };
 .offer{
-    grid-column:2/12;
-    grid-row:4/5;
+    grid-column:2/6;
+    grid-row:3/4;
 };
-.quote{
+.awards{
     grid-column:2/12;
     grid-row:5/6;
+    figcaption{padding-top:60px;
+    text-align:center;}
+    img{
+        float:left;
+    }
+}
+.quote{
+    padding-top:50px;
+    grid-column:2/12;
+    grid-row:6/7;
     font-style:italic;
 };
     
@@ -69,9 +84,13 @@ grid-auto-rows:minmax(1vw,auto);
     grid-column:3/10;
     grid-row:4/5;
 };
-.quote{
+.awards{
     grid-column:3/10;
     grid-row:5/6;
+}
+.quote{
+    grid-column:3/10;
+    grid-row:6/7;
     font-style:italic;
 };
     

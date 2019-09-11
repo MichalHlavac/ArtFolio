@@ -190,7 +190,7 @@ export default()=>{
                 {Main}
                 <div className="inprnt">
                     <a href="https://www.inprnt.com/gallery/fischmeister/" target="blank">
-                        You can purchase my prints at INPRNT.com
+                        You can purchase my prints at <u>INPRNT.com</u>
                     </a>
                 </div>
                 {Legal}
@@ -209,7 +209,7 @@ export default()=>{
                 {Main}
                 <div className="inprnt">
                     <a href="https://www.inprnt.com/gallery/fischmeister/" target="blank">
-                        Mé tisky můžete zakoupit na INPRNT.com
+                        Mé tisky můžete zakoupit na <u>INPRNT.com</u>
                     </a>
                 </div>
                 {Legal}

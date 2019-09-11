@@ -23,8 +23,17 @@ export default () =>(
                 Mohu pro Vás ilustrovat knihy, články, weby, plakáty, zpracovat svatební oznámení, návrh na tetování nebo vyhotovit portrét. Projektům se meze nekladou!
             </p>
         </span>
-        <br/>
+        
+        <span className="awards">
+            <h2>Ocenění</h2>
+        <figure>
+        <img src="/graphic/adobeAward.png" alt=""/>
+        <figcaption>Získala jsem ocenění Top Talent od Adobe Design Achievement Awards 2019 v kategorii Ilustrace</figcaption>
+        </figure>
+        </span>
+        
         <span  className="quote">
+            <h2>Řekli o mě</h2>
             <p>
             Pro práce Martiny Fischmeister se nejvíce hodí slova „cool digital“.
             Její ilustrace rozhodně reprezentují trend v současné české ilustraci: povšimněte si živých barev, které září skrz monitory a stejně tak magazínové stránky.

@@ -21,8 +21,15 @@ export default () =>(
             I can illustrate Your books, websites, posters, wedding invitations, tattoo designs or make a portrait for you. There are no limits to projects!
             </p>
         </span>
-        <br/>
+        <span className="awards">
+            <h2>Awards</h2>
+        <figure>
+        <img src="/graphic/adobeAward.png" alt=""/>
+        <figcaption>I was awarded Top Talent of Adobe Design Achievement Awards 2019 in the Illustration category.</figcaption>
+        </figure>
+        </span>
         <span  className="quote">
+            <h2>Said about me</h2>
             <p>
             For the work of Martina Fischmeister the most suitable words are „cool digital“.
             Her illustrations definetly represent a trend in the contemporary czech illustration: please note the juicy colours that seem to shine out of the digital monitors as well as magazine‘s pages.
