@@ -36,7 +36,7 @@ export default function (){
         return(
           <div className="Navigate"  onClick={close}>
             <SLink to='/'>Portfolio</SLink>
-            <SLink to='/o-me'>O Mě</SLink>
+            <SLink to='/o-me'>O Mně</SLink>
             <SLink to='/contact'>Kontakt</SLink>
           </div>);
       default:return null;}};
