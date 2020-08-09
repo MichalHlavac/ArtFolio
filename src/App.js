@@ -5,15 +5,25 @@ import BurgerNav from './components/BurgerNav'
 import NavBar from './components/NavBar';
 import {LangProvider} from './LangContext';
 import {NavProvider} from './NavContext';
+import {ContactBar} from './components/ContactBar';
 
 const GlobalStyle = createGlobalStyle`
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+  html{
+    position:relative;
+    max-width:1200px;
+  margin:auto;}
   body {
-    background-color:whitesmoke;
-    h1{font-size:25px;}
-    h2{font-size:20px;}
-    p{font-size:16px}
-    font-family:Arial, Helvetica, sans-serif;
-    margin: 0;
+   color:black;
+    background-color:white;
+    h1{font-size:20px;}
+    h2{font-size:18px;}
+    p{font-size:16px;
+      font-family:'Quicksand';}
+      font-family:'Quicksand';
+    font-weight:thin;
+    margin:0;
+    margin-bottom:100px;
     padding: 0;
     width:100%;
     height:100%;
@@ -21,6 +31,7 @@ const GlobalStyle = createGlobalStyle`
     
   }
   a {
+    font-family:'Quicksand';
     text-decoration: none;
     color: black;
   }
@@ -30,8 +41,10 @@ const GlobalStyle = createGlobalStyle`
 `
 
 const Body=styled.div `
-            margin-top:80px;
+            margin-top:60px;
             margin-bottom:20px;
+            width:1200px;
+            max-width:100%;
 `
 function App() {
   return (
@@ -46,6 +59,7 @@ function App() {
             <Body>
               <Routes path="*"/>
             </Body>
+            <ContactBar/>
             </LangProvider>
           </React.Suspense>
         </Root>

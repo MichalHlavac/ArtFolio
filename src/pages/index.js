@@ -5,6 +5,6 @@ import PortNav from 'components/PortNav';
 export default withRouteData (({articles}) => (
 
   <div>
-    <PortNav articles= {articles} lang=''/>
+    <PortNav articles= {articles}/>
   </div>
 ));

@@ -21,7 +21,7 @@
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
-     bordercolor="#666666"
+     bordercolor="#808080"
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
@@ -59,11 +59,11 @@
      transform="translate(-117.08937,-171.05828)">
     <g
        id="g873"
-       style="fill:#0c0c0c;fill-opacity:1">
+       style="fill:#808080;fill-opacity:1">
       <path
          sodipodi:nodetypes="ccccc"
          inkscape:connector-curvature="0"
-         style="font-weight:400;line-height:normal;font-family:sans-serif;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;white-space:normal;overflow:visible;isolation:auto;mix-blend-mode:normal;fill:#0c0c0c;fill-opacity:1;stroke:none;stroke-width:0.59689152;stroke-opacity:1"
+         style="font-weight:400;line-height:normal;font-family:sans-serif;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;white-space:normal;overflow:visible;isolation:auto;mix-blend-mode:normal;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.59689152;stroke-opacity:1"
          d="m 117.98192,171.21478 c -0.69943,-0.41151 -1.3198,0.62634 -0.60898,1.01881 l 12.52067,7.13557 c 0.69942,0.4115 1.3198,-0.62635 0.60898,-1.01882 z"
          font-weight="400"
          overflow="visible"
@@ -71,7 +71,7 @@
       <path
          sodipodi:nodetypes="ccccc"
          inkscape:connector-curvature="0"
-         style="font-weight:400;line-height:normal;font-family:sans-serif;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;white-space:normal;overflow:visible;isolation:auto;mix-blend-mode:normal;fill:#0c0c0c;fill-opacity:1;stroke:none;stroke-width:0.60122222;stroke-opacity:1"
+         style="font-weight:400;line-height:normal;font-family:sans-serif;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;white-space:normal;overflow:visible;isolation:auto;mix-blend-mode:normal;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.60122222;stroke-opacity:1"
          d="m 117.49011,178.31748 c -0.70556,0.39204 -0.1149,1.47476 0.57982,1.06284 l 12.43011,-7.13903 c 0.70555,-0.39204 0.11489,-1.47476 -0.57982,-1.06285 z"
          font-weight="400"
          overflow="visible"

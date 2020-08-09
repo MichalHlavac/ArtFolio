@@ -1,99 +1,78 @@
 import styled from 'styled-components';
 
-const About=styled.div `
-display:grid;
-grid-template-columns:repeat(12,8.333vw);
-grid-auto-rows:minmax(1vw,auto);
-.portrait{
-    grid-column:2/12;
-    grid-row:1/2;
-    width:380px;
-    max-width:100%;
-    margin:auto;
-    }
-.head{
-    grid-column:2/12;
-    grid-row:2/3;
-};
-.about{
-    grid-column:2/12;
-    grid-row:3/4;
-};
-.offer{
-    grid-column:2/12;
-    grid-row:4/5;
-};
-.quote{
-    grid-column:2/12;
-    grid-row:6/7;
-    font-style:italic;
-};
-.awards{
-    grid-column:2/12;
-    grid-row:5/6;
-    img{max-width:150px;}
-}
-@media only screen and (min-width:900px) {
-    .portrait{
-    grid-column:7/12;
-    grid-row:1/4;
-    }
-.head{
-    grid-column:2/6;
-    grid-row:1/2;
-};
-.about{
-    grid-column:2/6;
-    grid-row:2/3;
-};
-.offer{
-    grid-column:2/6;
-    grid-row:3/4;
-};
-.awards{
-    grid-column:2/12;
-    grid-row:5/6;
-    figcaption{padding-top:60px;
-    text-align:center;}
-    img{
-        float:left;
-    }
-}
-.quote{
-    padding-top:50px;
-    grid-column:2/12;
-    grid-row:6/7;
-    font-style:italic;
-};
-    
-}
-@media only screen and (min-width:1500px) {
-    .portrait{
-    grid-column:7/10;
-    grid-row:1/4;
-    }
-.head{
-    grid-column:3/6;
-    grid-row:1/2;
-};
-.about{
-    grid-column:3/6;
-    grid-row:2/3;
-};
-.offer{
-    grid-column:3/10;
-    grid-row:4/5;
-};
-.awards{
-    grid-column:3/10;
-    grid-row:5/6;
-}
-.quote{
-    grid-column:3/10;
-    grid-row:6/7;
-    font-style:italic;
-};
-    
-}
-`
-export{About}
+const About = styled.div`
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-auto-rows: minmax(1fr, auto);
+	.portrait {
+		grid-column: span 12;
+		grid-row: span 1;
+		width: 300px;
+		border-radius: 50%;
+		max-width: 90%;
+		margin: auto;
+	}
+	.about {
+		@media only screen and (max-width: 800px) {
+			grid-column: 2/12;
+		}
+        text-align:center;
+		grid-column: 3/11;
+		grid-row: span 1;
+	}
+	.contacts {
+		@media only screen and (max-width: 800px) {
+			grid-column: 2/12;
+            grid-row: span 1;
+		}
+        width:100%;
+        margin:auto;
+        text-align:center;
+		grid-column: 3/11;
+		grid-row: span 1;
+
+		a {
+			font-family: 'Roboto', sans-serif;
+		}}
+		.clients {
+			@media only screen and (max-width: 800px) {
+				grid-column: 2/12;
+				grid-row: span 1;
+			}
+			width:100%;
+			margin:auto;
+			text-align:center;
+			grid-column: 3/11;
+			grid-row: span 1;
+	
+			a {
+				font-family: 'Roboto', sans-serif;
+			}
+	}
+	.awards {
+			@media only screen and (max-width: 800px) {
+				grid-column: 2/12;
+				grid-row: span 1;
+			}
+			width:100%;
+			margin:auto;
+			text-align:center;
+			grid-column: 3/11;
+			grid-row: span 1;
+	
+	}
+	.legal {
+			@media only screen and (max-width: 800px) {
+				grid-column: 2/12;
+				grid-row: span 1;
+			}
+			width:100%;
+			padding-top:10vh;
+			margin:auto;
+			text-align:center;
+			grid-column: 3/11;
+			grid-row: span 1;
+	
+	}
+`;
+export { About };

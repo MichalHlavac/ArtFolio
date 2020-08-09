@@ -3,16 +3,14 @@
   
 // Template Map
 export default {
-  '../src/pages/404.js': require('../src/pages/404.js').default,
-'../src/pages/about-me.js': require('../src/pages/about-me.js').default,
-'../src/pages/contact.js': require('../src/pages/contact.js').default,
-'../src/pages/en.js': require('../src/pages/en.js').default,
-'../src/pages/index.js': require('../src/pages/index.js').default,
-'../src/pages/o-me.js': require('../src/pages/o-me.js').default,
-'../src/containers/Article': require('../src/containers/Article').default,
-'../src/containers/ArticleEn': require('../src/containers/ArticleEn').default,
-'../src/pages/about-me': require('../src/pages/about-me').default
+  '/mnt/c/Users/lahva/OneDrive/Plocha/martina web/src/pages/404.js': require('/mnt/c/Users/lahva/OneDrive/Plocha/martina web/src/pages/404.js').default,
+'/mnt/c/Users/lahva/OneDrive/Plocha/martina web/src/pages/en.js': require('/mnt/c/Users/lahva/OneDrive/Plocha/martina web/src/pages/en.js').default,
+'/mnt/c/Users/lahva/OneDrive/Plocha/martina web/src/pages/enInfo.js': require('/mnt/c/Users/lahva/OneDrive/Plocha/martina web/src/pages/enInfo.js').default,
+'/mnt/c/Users/lahva/OneDrive/Plocha/martina web/src/pages/index.js': require('/mnt/c/Users/lahva/OneDrive/Plocha/martina web/src/pages/index.js').default,
+'/mnt/c/Users/lahva/OneDrive/Plocha/martina web/src/pages/info.js': require('/mnt/c/Users/lahva/OneDrive/Plocha/martina web/src/pages/info.js').default,
+'/mnt/c/Users/lahva/OneDrive/Plocha/martina web/src/containers/Article': require('/mnt/c/Users/lahva/OneDrive/Plocha/martina web/src/containers/Article').default,
+'/mnt/c/Users/lahva/OneDrive/Plocha/martina web/src/pages/enInfo': require('/mnt/c/Users/lahva/OneDrive/Plocha/martina web/src/pages/enInfo').default
 }
 
-export const notFoundTemplate = '../src/pages/404.js'
+export const notFoundTemplate = '/mnt/c/Users/lahva/OneDrive/Plocha/martina web/src/pages/404.js'
 

@@ -12,16 +12,16 @@ const Logo=styled.div `
 `
 const Img=styled.img `
     width:auto;
-    height:40px;
+    height:35px;
 `
 export default function (){
-    const [lang,setLang] = useContext(LangContext);
+    const [lang,] = useContext(LangContext);
     switch(lang){
       case 'en':
         return(
           <Logo className="Logo">
             <Link to='/en'>
-                <Img src="/icons/logo2.svg" alt="f"/>
+                <Img src="/icons/logo.svg" alt="f"/>
             </Link>
           </Logo>
             );
@@ -29,7 +29,7 @@ export default function (){
         return(
             <Logo className="Logo" >
             <Link to='/'>
-                <Img src="/icons/logo2.svg"alt="f"/>
+                <Img src="/icons/logo.svg"alt="f"/>
             </Link>
           </Logo>
           );
