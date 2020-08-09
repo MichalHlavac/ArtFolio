@@ -1,52 +1,54 @@
 import React from 'react';
 import styled from 'styled-components';
-import LangNav from '../components/LangNav';
-import Navigate from '../components/Navigate';
-import Social from '../components/SocialNW';
-import Logo from '../components/Logo';
+
+import { Navigation } from './Navigation';
+import { SocialMediaNav } from './SocialMediaNav';
+import { LanguageOptions } from './LanguageOptions';
+import {BorderLine} from './BorderLine';
+import Logo from './Logo';
 
 const NavBar = styled.nav`
-  @media only screen and (max-height:450px) and (orientation:landscape){
-    display:none;}
-  @media only screen and (max-width:800px) and (orientation:portrait){
-    display:none;}
-  position:fixed;
-  top:0px;
-  right:0px;
-  z-index:+2;
-  width:100%;
-  background-color: #ffff;
-  box-shadow: 0 2px 0 0 rgba(211,211,211,0.6);
-  padding-bottom:10px;
-  padding-top: 10px;     
-  display:grid;
-  grid-template-columns:repeat(12,8.333vw);
-  grid-auto-rows:minmax(1vw,auto); 
-  .LangNav{
-    grid-column:11/13;
-    grid-row:1/2;
-    margin:auto 10px auto auto;
-    padding-right:10px;
-  }
-  .Logo{
-    grid-column:1/3;
-    grid-row:1/2;
-    margin-left:1vw;}
-  .Social{
-    grid-column:9/11;
-    grid-row:1/2;
-    margin:auto auto auto 30px;}
-  .Navigate{
-    grid-column:3/9;
-    grid-row:1/2;
-    margin:auto 0 auto auto;
-  }   
+	margin: auto ;
+	max-width:1200px;
+	background-color: #ffff;
+	padding: 10px 10px 5px 10px;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 100%;
+	.Logo {
+		grid-column: 1/4;
+	}
+	.content {
+		grid-column: 4/13;
+		text-align:right;
+	}
+`;
+
+const NavBarWrapper = styled.span `
+	@media only screen and (max-height: 450px) and (orientation: landscape) {
+		display: none;
+	}
+	@media only screen and (max-width: 800px) and (orientation: portrait) {
+		display: none;
+	}
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	z-index: +2;
+	width: 100%;
 `
-export default()=>(
-  <NavBar>
-    <LangNav/>
-    <Navigate/>
-    <Social/>
-    <Logo/>
-  </NavBar>
+
+export default () => (
+	<NavBarWrapper>
+	<NavBar>
+		<Logo />
+		<span className='content'>
+			<Navigation />
+			<BorderLine/>
+			<SocialMediaNav />
+			<BorderLine/>
+			<LanguageOptions />
+		</span>
+	</NavBar>
+	</NavBarWrapper>
 );

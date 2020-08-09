@@ -5,6 +5,7 @@ import PortNav from 'components/PortNav';
 import Content from 'components/Content';
 
 
+
 const Article=styled.div`
 margin-left:auto;
 margin-right:auto;
@@ -18,6 +19,7 @@ export default withRouteData(({ article, articles}) => {
     return( 
         <Article>
             <Content content = {article}/>
+            <hr/>
             <PortNav articles= {articles} lang=''/>
         </Article>)
 });

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 const CForm=styled.div `
     width:600px;
     max-width:100%;
+    margin:auto;
     padding:15px;
     box-sizing:border-box;
     
@@ -24,24 +25,24 @@ const CForm=styled.div `
         text-align:center;
         
         input{display:block;
-            background-color:whitesmoke;
+            background-color:white;
             font-size:16px;
             max-width:100%;
             width:564px;
             padding:2px;
             border:none;
-            border-bottom:1px solid black;
+            border-bottom:2px solid gray;
             margin-bottom:20px;
             };
         textarea{display:block;
-            background-color:whitesmoke;
+            background-color:white;
             font-size:16px;
             resize: none;
             width:564px;
             max-width:100%;
             height:300px;
             padding:2px;
-            border:1px solid black;
+            border:1px solid gray;
             margin-bottom:5px;
             };
         .button{
