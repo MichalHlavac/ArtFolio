@@ -1,29 +1,29 @@
 // Imports
-import plugin0 from '/mnt/c/Users/lahva/OneDrive/Plocha/martina web/node_modules/react-static-plugin-reach-router/browser.api.js'
+import plugin0 from '/mnt/c/Users/lahva/OneDrive/Dokumenty/GitHub/ArtFolio/node_modules/react-static-plugin-reach-router/browser.api.js'
 
 // Plugins
 const plugins = [{
-        location: "/mnt/c/Users/lahva/OneDrive/Plocha/martina web/node_modules/react-static-plugin-source-filesystem",
+        location: "/mnt/c/Users/lahva/OneDrive/Dokumenty/GitHub/ArtFolio/node_modules/react-static-plugin-source-filesystem",
         plugins: [],
         hooks: {}
       },
 {
-        location: "/mnt/c/Users/lahva/OneDrive/Plocha/martina web/node_modules/react-static-plugin-reach-router",
+        location: "/mnt/c/Users/lahva/OneDrive/Dokumenty/GitHub/ArtFolio/node_modules/react-static-plugin-reach-router",
         plugins: [],
         hooks: plugin0({})
       },
 {
-        location: "/mnt/c/Users/lahva/OneDrive/Plocha/martina web/node_modules/react-static-plugin-sitemap/dist",
+        location: "/mnt/c/Users/lahva/OneDrive/Dokumenty/GitHub/ArtFolio/node_modules/react-static-plugin-sitemap/dist",
         plugins: [],
         hooks: {}
       },
 {
-        location: "/mnt/c/Users/lahva/OneDrive/Plocha/martina web/node_modules/react-static-plugin-styled-components",
+        location: "/mnt/c/Users/lahva/OneDrive/Dokumenty/GitHub/ArtFolio/node_modules/react-static-plugin-styled-components",
         plugins: [],
         hooks: {}
       },
 {
-        location: "/mnt/c/Users/lahva/OneDrive/Plocha/martina web",
+        location: "/mnt/c/Users/lahva/OneDrive/Dokumenty/GitHub/ArtFolio",
         plugins: [],
         hooks: {}
       }]
