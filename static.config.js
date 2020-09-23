@@ -16,6 +16,14 @@ export default {
       })),
     },
     {
+      path: "/kontakt",
+      template: "src/pages/kontakt",
+    },
+    {
+      path: "/bio",
+      template: "src/pages/bio",
+    },
+    {
       path: "/en",
       getData: () => ({
         articles,
@@ -30,8 +38,12 @@ export default {
       })),
     },
     {
-      path: "/en/info",
-      template: "src/pages/enInfo",
+      path: "/en/contact",
+      template: "src/pages/contact",
+    },
+    {
+      path: "/en/bio",
+      template: "src/pages/enBio",
     },
   ],
   Document: ({
