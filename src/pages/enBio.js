@@ -22,7 +22,8 @@ export default () => (
       <h1>Clients include</h1>
       <p>
         Newspaper Právo, Magazine Salon, Novela Bohemica, Magazine Redway,
-        Creative Hub, Studio DRAWetc., Skautský institut Prague
+        Creative Hub, Studio DRAWetc., Skautský institut Prague, Good Looking
+        Studio
       </p>
     </span>
     <span className="awards">
@@ -31,6 +32,7 @@ export default () => (
         Top Talent of Adobe Design Achievement Awards 2019 in the Illustration
         category.
       </p>
+      <p>2nd place best illustrator on LUSTR 2020</p>
     </span>
   </About>
 );

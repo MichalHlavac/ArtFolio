@@ -19,7 +19,7 @@ export default () => (
       <p>
         noviny Právo, magazín Salon, magazín Redway, nakladatelství Novela
         Bohemica, Creative Hub, Studio DRAWetc., RAW art wrestling, Skautský
-        institut
+        institut, Good Looking Studio
       </p>
     </span>
     <span className="awards">
@@ -27,6 +27,7 @@ export default () => (
       <p>
         Top Talent od Adobe Design Achievement Awards 2019 v kategorii Ilustrace
       </p>
+      <p>2. místo nejlepší ilustrátor na LUSTR 2020</p>
     </span>
   </About>
 );
