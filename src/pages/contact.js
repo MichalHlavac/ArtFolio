@@ -1,5 +1,25 @@
 import React from "react";
 import { About } from "../components/styledAbout";
+import styled from "styled-components";
+
+const A = styled.a`
+  font-size: 20px;
+  text-align: center;
+  @media only screen and (min-height: 450px) and (orientation: landscape) {
+    display: inline;
+    margin: 10px 5px;
+  }
+  @media only screen and (min-width: 800px) and (orientation: portrait) {
+    display: inline;
+    margin: 10px 5px;
+  }
+  @media only screen and (max-height: 450px) and (orientation: landscape) {
+    display: block;
+  }
+  @media only screen and (max-width: 800px) and (orientation: portrait) {
+    display: block;
+  }
+`;
 
 export default () => (
   <About>
@@ -11,6 +31,18 @@ export default () => (
       </a>
       <br />
       <a href="tel:+420 607 028 769">+420 607 028 769</a>
+    </span>
+    <span className="contact">
+      <A href="https://www.facebook.com/martinafischmeister/" target="_blank">
+        Facebook
+      </A>
+
+      <A href="https://www.instagram.com/fischmeisterr/" target="_blank">
+        Instagram
+      </A>
+      <A href="https://www.behance.net/fischmeister" target="_blank">
+        Behance
+      </A>
     </span>
     <span className="clients">
       <h1>Clients include</h1>
