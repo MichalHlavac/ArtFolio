@@ -1,7 +1,117 @@
 const articles = [
   {
-    name: "Domů",
-    nameEn: "Domů",
+    name: "Komiks La Loba",
+    nameEn: "La Loba comic",
+    image: "/IMG/22/1.jpg",
+    description:
+      "La Loba doslova znamená ona – vlk, legenda vzniklá v Pueblu v severním Mexiku. Pro mě je to mýtus o přirozené divokosti a procesu tvorby života, témata úzce spjata s ženstvím. La Loba sbírá vlčí kosti a magickým rituálem je přivádí opět k životu, ovšem transformace nekončí pouze u vlčí podoby, postupně se proměňuje vlk ve smějící se ženu. Komiks je možné zakoupit v obchodě Page Five nebo ho objednat na mém mailu fischmeister.art@gmail.com",
+    descriptionEn:
+      "With this comic I wanted to bring to life an old legend La Loba about wild women resurrected from wolf bones. La Loba literally means she-wolf. It’s the name of a mythical woman of the Pueblo people from Northern Mexico, popularized by Clarissa Pinkola Estés in her book Women Who Run With The Wolves. La Loba to me means fierceness and the proces of creation which are very important aspects of femininity. You can buy the comic at Page Five store or order directly at fischmeister.art@gmail.com",
+    resources: [
+      {
+        image: "/IMG/22/1.jpg",
+      },
+      {
+        image: "/IMG/22/2.jpg",
+      },
+      {
+        image: "/IMG/22/3.jpg",
+      },
+      {
+        image: "/IMG/22/4.jpg",
+      },
+      {
+        image: "/IMG/22/5.jpg",
+      },
+      {
+        image: "/IMG/22/6.jpg",
+      },
+    ],
+  },
+  {
+    name: "Ilustrace pro noviny Právo",
+    nameEn: "Illustration for newspaper Právo",
+    image: "/IMG/21/1.jpg",
+    description: "",
+    descriptionEn: "",
+    resources: [
+      {
+        image: "/IMG/21/1.jpg",
+      },
+    ],
+  },
+  {
+    name: "Etiketa pro pivovar Zichovec",
+    nameEn: "Beer label for Zichovec",
+    image: "/IMG/20/1.jpg",
+    description: "",
+    descriptionEn: "",
+    resources: [
+      {
+        image: "/IMG/20/1.jpg",
+      },
+    ],
+  },
+  {
+    name: "Květiny",
+    nameEn: "Flowers",
+    image: "/IMG/19/1.jpg",
+    description: "osobní projekt",
+    descriptionEn: "personal project",
+    resources: [
+      {
+        image: "/IMG/19/1.jpg",
+      },
+      {
+        image: "/IMG/19/2.jpg",
+      },
+      {
+        image: "/IMG/19/2.jpg",
+      },
+    ],
+  },
+  {
+    name: "Peace of mind",
+    nameEn: "Peace of mind",
+    image: "/IMG/18/1.jpg",
+    description: "osobní projekt",
+    descriptionEn: "personal project",
+    resources: [
+      {
+        image: "/IMG/18/1.jpg",
+      },
+      {
+        image: "/IMG/18/2.jpg",
+      },
+    ],
+  },
+  {
+    name: "Plakát pro Hong Kong Alliance",
+    nameEn: "Poster for Hong Kong Alliance",
+    image: "/IMG/17/1.jpg",
+    description: "",
+    descriptionEn: "",
+    resources: [
+      {
+        image: "/IMG/17/1.jpg",
+      },
+    ],
+  },
+  {
+    name: "Ilustrace do publikace Suterén, Artrafika",
+    nameEn: "Illustration for Artrafika",
+    image: "/IMG/16/1.jpg",
+    description: "",
+    descriptionEn: "",
+    resources: [
+      {
+        image: "/IMG/16/1.jpg",
+      },
+    ],
+  },
+  {
+    name: "Ilustrace pro noviny Právo",
+    nameEn: "Ilustrace pro noviny Právo",
     image: "/IMG/15/1.jpg",
     description: "povídka Aleny Mornštajnové,  pro noviny Právo",
     descriptionEn: "Illustration for newspaper Právo",

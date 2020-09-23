@@ -19,36 +19,33 @@ const SLink = styled(Link)`
   @media only screen and (max-width: 800px) and (orientation: portrait) {
     display: block;
   }
-  
+
   text-decoration: none;
   text-align: center;
   font-size: 20px;
- 
 `;
 
-export const Navigation =()=> {
+export const Navigation = () => {
   const [lang, setLang] = useContext(LangContext);
   const [click, setClick] = useContext(NavContext);
   switch (lang) {
     case "en":
       return (
-        
-          <span onClick={() => setClick(false)}>
-            <SLink to='/en'>Portfolio</SLink>
-            <SLink to='/en/info'>Info</SLink>
-            
-          </span>
-
+        <span onClick={() => setClick(false)}>
+          <SLink to="/en">Portfolio</SLink>
+          <SLink to="/en/contact">Contact</SLink>
+          <SLink to="/en/bio">BIO</SLink>
+        </span>
       );
     case "cz":
       return (
-        
-          <span  onClick={() => setClick(false)}>
-            <SLink to='/'>Portfolio</SLink>
-            <SLink to='/info'>Info</SLink>
-          </span>
+        <span onClick={() => setClick(false)}>
+          <SLink to="/">Portfolio</SLink>
+          <SLink to="/kontakt">Kotakt</SLink>
+          <SLink to="/bio">BIO</SLink>
+        </span>
       );
     default:
       return null;
   }
-}
+};
