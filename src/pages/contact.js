@@ -5,22 +5,8 @@ import styled from "styled-components";
 const A = styled.a`
   font-size: 20px;
   text-align: center;
-  @media only screen and (min-height: 450px) and (orientation: landscape) {
-    display: inline;
-    margin: 10px 5px;
-  }
-  @media only screen and (min-width: 800px) and (orientation: portrait) {
-    display: inline;
-    margin: 10px 5px;
-  }
-  @media only screen and (max-height: 450px) and (orientation: landscape) {
-    display: block;
-  }
-  @media only screen and (max-width: 800px) and (orientation: portrait) {
-    display: block;
-  }
+  display: block;
 `;
-
 export default () => (
   <About>
     <span className="contacts">
