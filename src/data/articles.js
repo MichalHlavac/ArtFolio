@@ -66,7 +66,7 @@ const articles = [
         image: "/IMG/19/2.jpg",
       },
       {
-        image: "/IMG/19/2.jpg",
+        image: "/IMG/19/3.jpg",
       },
     ],
   },
