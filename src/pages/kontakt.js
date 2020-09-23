@@ -31,20 +31,6 @@ export default () => (
         Behance
       </A>
     </span>
-    <span className="clients">
-      <h1>Klienti</h1>
-      <p>
-        noviny Právo, magazín Salon, magazín Redway, nakladatelství Novela
-        Bohemica, Creative Hub, Studio DRAWetc., RAW art wrestling, Skautský
-        institut
-      </p>
-    </span>
-    <span className="awards">
-      <h1>Ocenění</h1>
-      <p>
-        Top Talent od Adobe Design Achievement Awards 2019 v kategorii Ilustrace
-      </p>
-    </span>
     <span className="legal">
       <p>
         Ič: 07798288
