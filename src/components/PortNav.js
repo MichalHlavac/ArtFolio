@@ -53,8 +53,8 @@ export default function PortNav(props) {
       <Link
         to={`${lang === "en" ? `/${lang}` : ""}/portfolio/${
           lang === "en"
-            ? article.nameEn.replace(".", "_").toLowerCase()
-            : article.name.replace(".", "_").toLowerCase()
+            ? article.image.replace(".", "_").toLowerCase()
+            : article.image.replace(".", "_").toLowerCase()
         }`}
       >
         <PortImg

@@ -10,7 +10,7 @@ export default {
         articles,
       }),
       children: articles.map((article) => ({
-        path: `/portfolio/${article.name.replace(".", "_").toLowerCase()}`,
+        path: `/portfolio/${article.image.replace(".", "_").toLowerCase()}`,
         template: "src/containers/Article",
         getData: () => ({ article, articles }),
       })),
@@ -29,7 +29,7 @@ export default {
         articles,
       }),
       children: articles.map((article) => ({
-        path: `/portfolio/${article.nameEn.toLowerCase()}`,
+        path: `/portfolio/${article.image.replace(".", "_").toLowerCase()}`,
         template: "src/containers/Article",
         getData: () => ({
           article,
