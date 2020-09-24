@@ -7,32 +7,31 @@ export default () => (
     <span className="about">
       <h1>Martina Fischmeister</h1>
       <p>
-        Hi, I'm a freelance illustrator and artist from Prague, Czechia. In my
-        illustration I like to work with color and movement, relationship
-        between shapes and the complexity of balancing story with picture.
-        Outside of illustrative work I devote myself to comics and traditional
-        painting.
-      </p>
-      <p>
-        If you want to hire me, have questions or just say want to say hi, feel
-        free to contact me!
-      </p>
-    </span>
-    <span className="clients">
-      <h1>Clients include</h1>
-      <p>
-        Newspaper Právo, Magazine Salon, Novela Bohemica, Magazine Redway,
-        Creative Hub, Studio DRAWetc., Skautský institut Prague, Good Looking
-        Studio
+        I’m an illustrator, making mostly editorial and book illustrations and
+        comics. My work is most recognizable for its vivid colors, clean shapes
+        and textures. I like to work with the human form, natural elements and
+        transcendental motives but I also find inspiration in mythology and old
+        stories that still have relevant meaning to this day. Besides creating
+        art I’m passionate about ecology, sustainability and mindful living, all
+        of which are inspiring me in my work and personal life.
       </p>
     </span>
     <span className="awards">
       <h1>Awards</h1>
       <p>
         Top Talent of Adobe Design Achievement Awards 2019 in the Illustration
-        category.
+        category 2nd place Best illustrator on LUSTR festival 2020
       </p>
-      <p>2nd place best illustrator on LUSTR 2020</p>
+      <p>2nd place Best illustrator on LUSTR festival 2020</p>
+    </span>
+    <span className="clients">
+      <h1>Clients</h1>
+      <p>
+        Newspaper Právo, Magazine Salon, Hong Kong Alliance, Good Looking
+        Studio, publisher Novela Bohemica, Magazine Redway, Creative Hub, Studio
+        DRAWetc., Skautský institut Prague, Silky Gang, Good Looking Studio,
+        brewery Zichovec,
+      </p>
     </span>
   </About>
 );
